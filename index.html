@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="logo-barolo.png">
+<title>Club Barolo Selecto — Suscripción de vinos</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#121110;}
+a{color:#E8792B}a:hover{color:#F59A55}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.cards3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.cards4{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:#2A2724}
+.nav-links{display:flex;gap:26px;flex-wrap:wrap}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+input,select{font-family:inherit}
+input:focus,select:focus{outline:2px solid #E8792B;outline-offset:1px}
+@media (max-width:860px){.nav-links{display:none}.hero-title{font-size:46px !important}.sec-title{font-size:36px !important}}
+</style>
+</helmet>
+<div style="font-family: 'Manrope', system-ui, sans-serif; color: #EDE6DC; background: #121110; min-height: 100vh; width: 100%">
+
+<div style="background: {{accent}}; color: #121110; text-align: center; font-size: 13px; font-weight: 700; padding: 10px 16px; letter-spacing: 0.3px">Lanzamiento: los primeros 100 socios congelan su precio por 6 meses · Entrega sin cargo en Tucumán</div>
+
+<header style="border-bottom: 1px solid #2A2724; background: #121110">
+<div style="max-width: 1240px; margin: 0 auto; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
+<a href="#inicio" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #EDE6DC">
+<img src="logo-barolo.png" alt="Logo de Barolo" width="46" height="46" style="width: 46px; height: 46px; border-radius: 50%; display: block">
+<span style="display: flex; flex-direction: column; line-height: 1.1"><span style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; letter-spacing: 2px">BAROLO</span><span style="font-size: 11px; letter-spacing: 3px; color: #B3AA9E">CLUB SELECTO</span></span>
+</a>
+<nav class="nav-links" aria-label="Secciones">
+<a href="#nosotros" style="color: #EDE6DC; text-decoration: none; font-size: 14px; font-weight: 500">Nosotros</a>
+<a href="#planes" style="color: #EDE6DC; text-decoration: none; font-size: 14px; font-weight: 500">Suscripciones</a>
+<a href="#cava" style="color: #EDE6DC; text-decoration: none; font-size: 14px; font-weight: 500">La Cava</a>
+<a href="Tienda.dc.html" style="color: {{accent}}; text-decoration: none; font-size: 14px; font-weight: 800; border: 1px solid {{accent}}; padding: 6px 14px; border-radius: 999px">Tienda</a>
+<a href="Regaleria.dc.html" style="color: {{accent}}; text-decoration: none; font-size: 14px; font-weight: 800; border: 1px solid {{accent}}; padding: 6px 14px; border-radius: 999px">Regalería</a>
+<a href="Habanos.dc.html" style="color: #C9A24A; text-decoration: none; font-size: 14px; font-weight: 800; border: 1px solid #C9A24A; padding: 6px 14px; border-radius: 999px">Habanos</a>
+<a href="#notas" style="color: #EDE6DC; text-decoration: none; font-size: 14px; font-weight: 500">Notas y tips</a>
+<a href="#oliva" style="color: #EDE6DC; text-decoration: none; font-size: 14px; font-weight: 500">Oliva <span style="font-size: 10px; font-weight: 800; color: #121110; background: {{accent}}; padding: 2px 6px; border-radius: 6px; margin-left: 4px">NUEVO</span></a>
+</nav>
+<a href="#planes" style="background: {{accent}}; color: #121110; text-decoration: none; font-weight: 700; font-size: 14px; padding: 13px 22px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Asociarme</a>
+</div>
+</header>
+
+<section id="inicio" style="position: relative; overflow: hidden; border-bottom: 1px solid #2A2724; background: radial-gradient(ellipse at 80% 20%, #2B1A10 0%, #121110 60%)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px 104px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+<span style="align-self: flex-start; border: 1px solid #4A3526; color: {{accent}}; font-size: 12px; letter-spacing: 2.5px; font-weight: 700; padding: 8px 14px; border-radius: 999px">CLUB BAROLO SELECTO · EL PRIMER CLUB DE VINOS DE TUCUMÁN</span>
+<h1 class="hero-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 74px; line-height: 1.02; letter-spacing: -0.5px; color: #F6F0E8">Los vinos de Barolo,<br><span style="font-style: italic; color: {{accent}}">todos los meses</span> en tu mesa.</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #C9C0B4; max-width: 560px">Una caja elegida por la casa en catas a ciegas, con la historia de cada etiqueta. Retirala en la taberna con una copa de cortesía o recibila sin cargo en tu casa.</p>
+<div style="display: flex; gap: 14px; flex-wrap: wrap">
+<a href="#planes" style="background: {{accent}}; color: #121110; text-decoration: none; font-weight: 700; font-size: 16px; padding: 16px 28px; border-radius: 999px; min-height: 44px; box-sizing: border-box">Elegí tu plan</a>
+<a href="#llamado" style="border: 1px solid #5A534C; color: #EDE6DC; text-decoration: none; font-weight: 600; font-size: 16px; padding: 16px 28px; border-radius: 999px; min-height: 44px; box-sizing: border-box">Preferís que te llamemos</a>
+</div>
+</div>
+<div style="flex: 1 1 340px; min-width: 0; display: flex; justify-content: center">
+<div style="width: 100%; max-width: 380px; aspect-ratio: 4 / 5; border-radius: 24px; background: #1C1A18; border: 1px solid #2E2A26; display: flex; flex-direction: column; justify-content: space-between; padding: 30px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: flex-start">
+<span style="font-size: 12px; letter-spacing: 2.5px; color: #B3AA9E; font-weight: 700">CAJA DE NOVIEMBRE</span>
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 700; color: {{accent}}">BA</span>
+</div>
+<div style="display: flex; gap: 18px; align-items: flex-end; justify-content: center; height: 230px">
+<svg width="62" height="220" viewBox="0 0 62 220" aria-hidden="true"><path d="M23 4h16v52c0 10 19 22 19 44v112a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V100c0-22 19-34 19-44z" fill="#2A1712" stroke="#E8792B" stroke-width="1.5"/><rect x="10" y="128" width="42" height="50" rx="2" fill="#EDE6DC"/><text x="31" y="158" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="16" font-weight="700" fill="#121110">BA</text></svg>
+<svg width="62" height="236" viewBox="0 0 62 236" aria-hidden="true"><path d="M23 4h16v60c0 10 19 22 19 44v120a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V108c0-22 19-34 19-44z" fill="#3A1A16" stroke="#E8792B" stroke-width="1.5"/><rect x="10" y="140" width="42" height="54" rx="2" fill="#E8792B"/><text x="31" y="172" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="16" font-weight="700" fill="#121110">BA</text></svg>
+<svg width="62" height="220" viewBox="0 0 62 220" aria-hidden="true"><path d="M23 4h16v52c0 10 19 22 19 44v112a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V100c0-22 19-34 19-44z" fill="#3B3524" stroke="#E8792B" stroke-width="1.5"/><rect x="10" y="128" width="42" height="50" rx="2" fill="#EDE6DC"/><text x="31" y="158" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="16" font-weight="700" fill="#121110">BA</text></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; color: #F6F0E8">Plan Taberna</span>
+<span style="font-size: 14px; color: #B3AA9E">3 botellas · nota del sommelier · ficha de maridaje</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section aria-label="Por qué asociarte" style="border-bottom: 1px solid #2A2724">
+<div class="strip">
+<div style="background: #121110; padding: 28px 24px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 700; color: {{accent}}">Sin cargo</span><span style="font-size: 14px; color: #B3AA9E">Entrega en Yerba Buena y San Miguel de Tucumán</span></div>
+<div style="background: #121110; padding: 28px 24px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 700; color: {{accent}}">Catas a ciegas</span><span style="font-size: 14px; color: #B3AA9E">Cada vino pasa la prueba de la casa antes de llegar a vos</span></div>
+<div style="background: #121110; padding: 28px 24px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 700; color: {{accent}}">15% en Barolo</span><span style="font-size: 14px; color: #B3AA9E">Con tu credencial de socio, en toda la carta</span></div>
+<div style="background: #121110; padding: 28px 24px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 700; color: {{accent}}">Pausá cuando quieras</span><span style="font-size: 14px; color: #B3AA9E">De 1 a 3 meses, o baja online sin trámites</span></div>
+</div>
+</section>
+
+<section id="como-funciona" style="border-bottom: 1px solid #2A2724">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{accent}}; font-weight: 700">CÓMO FUNCIONA</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6F0E8">Tres pasos y el vino llega solo.</h2>
+</div>
+<div class="cards3">
+<div style="background: #1A1816; border: 1px solid #2A2724; border-radius: 18px; padding: 30px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 44px; font-weight: 700; color: {{accent}}; line-height: 1">01</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700; color: #F6F0E8">Accedés a vinos seleccionados</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #B3AA9E">Elegí tu plan y contanos qué te gusta tomar y comer. Con eso ajustamos tu caja a tu paladar.</p>
+</div>
+<div style="background: #1A1816; border: 1px solid #2A2724; border-radius: 18px; padding: 30px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 44px; font-weight: 700; color: {{accent}}; line-height: 1">02</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700; color: #F6F0E8">Recibís todos los meses</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #B3AA9E">La primera semana de cada mes, en tu casa o en la taberna, con la ficha de cata de cada vino.</p>
+</div>
+<div style="background: #1A1816; border: 1px solid #2A2724; border-radius: 18px; padding: 30px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 44px; font-weight: 700; color: {{accent}}; line-height: 1">03</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700; color: #F6F0E8">Aprendés y disfrutás</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #B3AA9E">Catas de socios, descuentos en la carta y prioridad en los eventos de la casa.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="planes" style="border-bottom: 1px solid #2A2724; background: #161412">
+<div style="max-width: 1280px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 700px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{accent}}; font-weight: 700">SUSCRIPCIONES</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6F0E8">Un plan para cada paladar.</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #B3AA9E">Todos incluyen entrega sin cargo y todos los beneficios del socio. Podés sumar más de una suscripción.</p>
+</div>
+<div role="group" aria-label="Filtrar planes" style="display: flex; gap: 8px; flex-wrap: wrap">
+<sc-for list="{{filters}}" as="ft" hint-placeholder-count="4">
+<button type="button" onClick="{{ft.pick}}" aria-pressed="{{ft.pressed}}" style="font-family: inherit; cursor: pointer; min-height: 44px; padding: 10px 18px; border-radius: 999px; font-size: 14px; font-weight: 700; background: {{ft.bg}}; color: {{ft.color}}; border: 1px solid {{ft.border}}">{{ft.label}}</button>
+</sc-for>
+</div>
+</div>
+<div class="plans">
+<sc-for list="{{plans}}" as="plan" hint-placeholder-count="6">
+<article style="background: {{plan.bg}}; border: {{plan.border}}; border-radius: 20px; padding: 0 24px 26px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden">
+<div style="height: 170px; margin: 0 -24px; background: #E9E1D6; display: flex; align-items: flex-end; justify-content: center; gap: 6px; padding-bottom: 18px; box-sizing: border-box">
+<sc-for list="{{plan.imgs}}" as="b" hint-placeholder-count="3">
+<svg width="{{b.w}}" height="{{b.h}}" viewBox="0 0 62 220" aria-hidden="true"><rect x="22" y="2" width="18" height="22" rx="2" fill="{{b.cap}}"/><path d="M23 4h16v52c0 10 19 22 19 44v112a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V100c0-22 19-34 19-44z" fill="{{b.fill}}"/><rect x="10" y="126" width="42" height="56" rx="2" fill="{{b.label}}"/><rect x="16" y="140" width="30" height="3" fill="{{b.ink}}"/><rect x="20" y="150" width="22" height="2" fill="{{b.ink}}"/></svg>
+</sc-for>
+</div>
+<sc-if value="{{plan.featured}}" hint-placeholder-val="{{ false }}">
+<span style="position: absolute; top: 14px; left: 16px; background: {{accent}}; color: #121110; font-size: 11px; font-weight: 800; letter-spacing: 1.5px; padding: 6px 12px; border-radius: 999px">MÁS ELEGIDO</span>
+</sc-if>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 12px; letter-spacing: 2px; color: #B3AA9E; font-weight: 700">{{plan.tag}}</span>
+<h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 600; color: #F6F0E8">{{plan.name}}</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.55; color: #C9C0B4; min-height: 44px">{{plan.desc}}</p>
+</div>
+<sc-if value="{{plan.hasAlt}}" hint-placeholder-val="{{ false }}">
+<div role="group" aria-label="Cantidad de botellas" style="display: flex; background: #121110; border: 1px solid #2E2A26; border-radius: 999px; padding: 4px">
+<button type="button" onClick="{{plan.pickA}}" aria-pressed="{{plan.aOn}}" style="flex: 1; font-family: inherit; cursor: pointer; min-height: 40px; border: none; border-radius: 999px; font-size: 13px; font-weight: 700; background: {{plan.aBg}}; color: {{plan.aColor}}">{{plan.aLabel}}</button>
+<button type="button" onClick="{{plan.pickB}}" aria-pressed="{{plan.bOn}}" style="flex: 1; font-family: inherit; cursor: pointer; min-height: 40px; border: none; border-radius: 999px; font-size: 13px; font-weight: 700; background: {{plan.bBg}}; color: {{plan.bColor}}">{{plan.bLabel}}</button>
+</div>
+</sc-if>
+<div style="display: flex; flex-direction: column; gap: 2px; padding: 14px 0; border-top: 1px solid #2E2A26; border-bottom: 1px solid #2E2A26">
+<span style="font-size: 14px; color: #B3AA9E"><strong style="color: #F6F0E8; font-size: 18px">{{plan.bottles}}</strong> botellas por mes</span>
+<sc-if value="{{plan.hasOld}}" hint-placeholder-val="{{ false }}">
+<span style="font-size: 15px; color: #8E867C; text-decoration: line-through">{{plan.oldPrice}}</span>
+</sc-if>
+<span style="display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap"><span style="font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 700; color: {{accent}}; line-height: 1.15">{{plan.price}}</span><sc-if value="{{plan.hasOff}}" hint-placeholder-val="{{ false }}"><span style="font-size: 12px; font-weight: 800; color: #121110; background: {{accent}}; padding: 3px 8px; border-radius: 6px">{{plan.off}}</span></sc-if></span>
+<span style="font-size: 12px; color: #9C9388">{{plan.priceNote}}</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+<span style="font-size: 12px; letter-spacing: 1.5px; color: #B3AA9E; font-weight: 700">VINOS QUE VAS A RECIBIR EN NOVIEMBRE</span>
+<sc-for list="{{plan.wines}}" as="wine" hint-placeholder-count="3">
+<span style="font-size: 14px; line-height: 1.4; color: #E2DAD0; display: flex; gap: 8px"><span style="color: {{accent}}" aria-hidden="true">●</span>{{wine}}</span>
+</sc-for>
+<a href="#cava" style="font-size: 13px; color: {{accent}}; text-decoration: none; font-weight: 700; padding-top: 4px">Info de los vinos seleccionados →</a>
+</div>
+<a href="#llamado" style="text-align: center; background: {{plan.btnBg}}; color: {{plan.btnColor}}; border: 1px solid {{accent}}; text-decoration: none; font-weight: 700; font-size: 15px; padding: 13px 18px; border-radius: 999px; min-height: 44px; box-sizing: border-box">Suscribirme a {{plan.name}}</a>
+</article>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; background: #1A1816; border: 1px solid #2A2724; border-radius: 18px; padding: 22px 26px">
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 700; color: #F6F0E8">¿Preferís que te llamemos?</span><span style="font-size: 14px; color: #B3AA9E">Dejanos tus datos y te asesoramos por WhatsApp o teléfono.</span></div>
+<a href="#llamado" style="border: 1px solid {{accent}}; color: {{accent}}; text-decoration: none; font-weight: 700; font-size: 15px; padding: 13px 22px; border-radius: 999px; min-height: 44px; box-sizing: border-box">Dejar mis datos</a>
+</div>
+<p style="margin: 0; font-size: 13px; color: #8E867C">Selección de noviembre armada con vinos de la lista de precios de octubre 2026. Débito automático mensual con tarjeta de crédito o débito.</p>
+</div>
+</section>
+
+<section id="beneficios" style="border-bottom: 1px solid #2A2724">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 700px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{accent}}; font-weight: 700">BENEFICIOS EXCLUSIVOS POR SER PARTE</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6F0E8">El club no termina en la caja.<br>Sigue en la taberna.</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 28px; align-items: stretch">
+<div style="flex: 1 1 320px; min-width: 0; border-radius: 22px; background: linear-gradient(140deg, #2B1A10 0%, #1A1816 70%); border: 1px solid #4A3526; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 260px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="font-size: 12px; letter-spacing: 3px; color: #B3AA9E; font-weight: 700">CREDENCIAL DE SOCIO</span><span style="font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 700; color: {{accent}}; line-height: 1">BA</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; color: #F6F0E8">Club Barolo Selecto</span><span style="font-size: 14px; color: #C9C0B4; letter-spacing: 2px">SOCIO FUNDADOR · N.º 0001</span></div>
+</div>
+<div class="cards3" style="flex: 999 1 560px; min-width: 0">
+<sc-for list="{{benefits}}" as="b" hint-placeholder-count="6">
+<div style="display: flex; gap: 16px; align-items: flex-start; padding: 22px; border-radius: 18px; background: #1A1816; border: 1px solid #2A2724">
+<span style="flex: none; width: 46px; height: 46px; border-radius: 12px; background: #2B1A10; color: {{accent}}; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 18px">{{b.big}}</span>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: 16px; font-weight: 700; color: #F6F0E8">{{b.title}}</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.55; color: #B3AA9E">{{b.text}}</p>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+</section>
+
+<section id="cava" style="border-bottom: 1px solid #2A2724; background: #161412">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 680px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{accent}}; font-weight: 700">LA CAVA DE BAROLO</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6F0E8">Las selecciones de cada mes, a la vista.</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #B3AA9E">Cada caja tiene un nombre y una idea. Mirá qué eligió la casa y por qué, antes de asociarte.</p>
+</div>
+<a href="#cava" style="color: {{accent}}; font-weight: 700; font-size: 15px; text-decoration: none; padding: 12px 0">Ver todas las selecciones →</a>
+</div>
+<div class="cards3">
+<sc-for list="{{cava}}" as="c" hint-placeholder-count="6">
+<a href="#cava" style="text-decoration: none; display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 18px; background: #1A1816; border: 1px solid #2A2724; color: #EDE6DC">
+<span style="display: flex; gap: 10px; align-items: center"><span style="font-size: 11px; font-weight: 800; letter-spacing: 1.5px; color: #121110; background: {{c.chipBg}}; padding: 4px 9px; border-radius: 6px">{{c.month}}</span><span style="font-size: 13px; font-weight: 700; color: #B3AA9E">{{c.plan}}</span></span>
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; font-style: italic; color: #F6F0E8; line-height: 1.2">“{{c.title}}”</span>
+</a>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; padding: 26px; border-radius: 18px; border: 1px dashed #4A3526">
+<span style="font-size: 15px; font-weight: 700; color: #F6F0E8; flex: 1 1 220px">Cada vino llega con su ficha:</span>
+<span style="font-size: 14px; color: #B3AA9E; flex: 1 1 160px">Bodega y región</span>
+<span style="font-size: 14px; color: #B3AA9E; flex: 1 1 160px">Notas de cata</span>
+<span style="font-size: 14px; color: #B3AA9E; flex: 1 1 160px">Temperatura de servicio</span>
+<span style="font-size: 14px; color: #B3AA9E; flex: 1 1 160px">Maridaje con un plato de Barolo</span>
+</div>
+</div>
+</section>
+
+<section style="border-bottom: 1px solid #2A2724">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{accent}}; font-weight: 700">HECHO A TU MEDIDA</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6F0E8">Una caja que te conoce.</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #B3AA9E">No somos una plataforma: somos la familia que te recibe en Barolo. Cada caja sale de la taberna con nombre y apellido.</p>
+</div>
+<div style="flex: 999 1 520px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+<div style="padding: 22px; border-radius: 16px; border: 1px solid #2E2A26; display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-size: 16px; font-weight: 700; color: #F6F0E8">Tu perfil de gusto</h3><p style="margin: 0; font-size: 14px; line-height: 1.55; color: #B3AA9E">Un cuestionario corto al asociarte: cepas, estilos y lo que no te gusta.</p></div>
+<div style="padding: 22px; border-radius: 16px; border: 1px solid #2E2A26; display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-size: 16px; font-weight: 700; color: #F6F0E8">Cambiá un vino</h3><p style="margin: 0; font-size: 14px; line-height: 1.55; color: #B3AA9E">Si ya lo tenés o no es para vos, lo reemplazamos antes del envío.</p></div>
+<div style="padding: 22px; border-radius: 16px; border: 1px solid #2E2A26; display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-size: 16px; font-weight: 700; color: #F6F0E8">Nota escrita a mano</h3><p style="margin: 0; font-size: 14px; line-height: 1.55; color: #B3AA9E">Cada caja trae unas líneas de la casa sobre por qué elegimos esos vinos.</p></div>
+<div style="padding: 22px; border-radius: 16px; border: 1px solid #2E2A26; display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-size: 16px; font-weight: 700; color: #F6F0E8">Tu cava personal</h3><p style="margin: 0; font-size: 14px; line-height: 1.55; color: #B3AA9E">El historial de todo lo que recibiste, para volver a comprar con precio de socio.</p></div>
+</div>
+</div>
+</section>
+
+<section id="oliva" style="border-bottom: 1px solid #2A2724; background: #161412">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<span style="align-self: flex-start; font-size: 11px; font-weight: 800; letter-spacing: 1.5px; color: #121110; background: {{accent}}; padding: 5px 10px; border-radius: 6px">NOVEDAD · ENTREGA TRIMESTRAL</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6F0E8">Oliva Barolo: aceites que acompañan cada estación.</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #B3AA9E">Además del vino, la casa selecciona aceites de oliva virgen extra. Cada estación, tres aceites de 500 ml distintos para llevar tus platos a otro nivel.</p>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 12px; letter-spacing: 1.5px; color: #B3AA9E; font-weight: 700">ACEITES DE ESTA ESTACIÓN</span>
+<span style="font-size: 14px; color: #E2DAD0; display: flex; gap: 8px"><span style="color: {{accent}}" aria-hidden="true">●</span>Laur Virgen Extra Gran Mendoza 500 ml</span>
+<span style="font-size: 14px; color: #E2DAD0; display: flex; gap: 8px"><span style="color: {{accent}}" aria-hidden="true">●</span>Tapiz Arauco 500 ml</span>
+<span style="font-size: 14px; color: #E2DAD0; display: flex; gap: 8px"><span style="color: {{accent}}" aria-hidden="true">●</span>D’Aguirre Premium 500 ml</span>
+</div>
+</div>
+<div style="flex: 1 1 300px; min-width: 0; background: #1A1816; border: 1.5px solid {{accent}}; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 12px; letter-spacing: 2px; color: #B3AA9E; font-weight: 700">PLAN OLIVA</span>
+<span style="font-size: 14px; color: #B3AA9E"><strong style="color: #F6F0E8; font-size: 18px">3</strong> botellas cada 3 meses</span>
+<span style="font-size: 15px; color: #8E867C; text-decoration: line-through">$64.800</span>
+<span style="display: flex; align-items: baseline; gap: 10px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 42px; font-weight: 700; color: {{accent}}; line-height: 1.1">$58.320</span><span style="font-size: 12px; font-weight: 800; color: #121110; background: {{accent}}; padding: 3px 8px; border-radius: 6px">10% OFF</span></span>
+<span style="font-size: 12px; color: #9C9388">en la primera entrega</span>
+<a href="#llamado" style="margin-top: 8px; text-align: center; background: {{accent}}; color: #121110; text-decoration: none; font-weight: 700; font-size: 15px; padding: 13px 18px; border-radius: 999px; min-height: 44px; box-sizing: border-box">Suscribirme a Oliva</a>
+</div>
+</div>
+</section>
+
+<section id="tienda" style="border-bottom: 1px solid #2A2724">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{accent}}; font-weight: 700">LA TIENDA DE BAROLO</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6F0E8">Packs y regalos, con precio de socio.</h2>
+</div>
+<a href="Tienda.dc.html" style="color: {{accent}}; font-weight: 700; font-size: 15px; text-decoration: none; padding: 12px 0">Ver los 380 vinos de la tienda →</a>
+</div>
+<nav aria-label="Categorías de la tienda" style="display: flex; gap: 10px; flex-wrap: wrap">
+<sc-for list="{{cats}}" as="ct" hint-placeholder-count="8">
+<button type="button" onClick="{{ct.pick}}" aria-pressed="{{ct.pressed}}" style="font-family: inherit; cursor: pointer; min-height: 44px; padding: 10px 18px; border-radius: 999px; font-size: 14px; font-weight: 700; background: {{ct.bg}}; color: {{ct.color}}; border: 1px solid {{ct.border}}">{{ct.label}}</button>
+</sc-for>
+</nav>
+<div class="cards4">
+<sc-for list="{{packs}}" as="p" hint-placeholder-count="8">
+<article style="background: #1A1816; border: 1px solid #2A2724; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div style="height: 170px; background: #E9E1D6; display: flex; align-items: flex-end; justify-content: center; gap: 4px; padding-bottom: 18px; box-sizing: border-box; position: relative; overflow: hidden">
+<sc-for list="{{p.imgs}}" as="b" hint-placeholder-count="4">
+<svg width="{{b.w}}" height="{{b.h}}" viewBox="0 0 62 220" aria-hidden="true"><rect x="22" y="2" width="18" height="22" rx="2" fill="{{b.cap}}"/><path d="M23 4h16v52c0 10 19 22 19 44v112a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V100c0-22 19-34 19-44z" fill="{{b.fill}}"/><rect x="10" y="126" width="42" height="56" rx="2" fill="{{b.label}}"/><rect x="16" y="140" width="30" height="3" fill="{{b.ink}}"/><rect x="20" y="150" width="22" height="2" fill="{{b.ink}}"/></svg>
+</sc-for>
+<sc-if value="{{p.hasTag}}" hint-placeholder-val="{{ false }}"><span style="position: absolute; top: 12px; left: 12px; font-size: 11px; font-weight: 800; color: #121110; background: {{accent}}; padding: 4px 8px; border-radius: 6px">{{p.tag}}</span></sc-if>
+</div>
+<div style="padding: 20px; display: flex; flex-direction: column; gap: 10px; flex-grow: 1">
+<h3 style="margin: 0; font-size: 15px; font-weight: 700; line-height: 1.4; color: #F6F0E8">{{p.name}}</h3>
+<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #9C9388; flex-grow: 1">{{p.detail}}</p>
+<div style="display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap">
+<span style="font-size: 14px; color: #9C9388; text-decoration: line-through">{{p.price}}</span>
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 700; color: {{accent}}">{{p.member}}</span>
+</div>
+<span style="font-size: 12px; color: #B3AA9E">precio socio</span>
+<a href="#tienda" style="margin-top: 4px; text-align: center; border: 1px solid #5A534C; color: #F6F0E8; text-decoration: none; font-weight: 700; font-size: 14px; padding: 11px 14px; border-radius: 999px; min-height: 44px; box-sizing: border-box">Agregar al carrito</a>
+</div>
+</article>
+</sc-for>
+</div>
+<sc-if value="{{noPacks}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; font-size: 15px; color: #B3AA9E">Pronto vas a encontrar productos en esta categoría.</p>
+</sc-if>
+</div>
+</section>
+
+<section style="border-bottom: 1px solid #2A2724; background: {{accent}}">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 46px; line-height: 1.05; color: #121110">Regalá Barolo estas fiestas.</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #2A1A10">Suscripciones prepagas de 3, 6 o 12 meses, y cajas corporativas con tarjeta personalizada para tu equipo y tus clientes.</p>
+</div>
+<div style="flex: 1 1 260px; display: flex; gap: 12px; flex-wrap: wrap">
+<a href="Regaleria.dc.html" style="background: #121110; color: #F6F0E8; text-decoration: none; font-weight: 700; font-size: 15px; padding: 15px 24px; border-radius: 999px; min-height: 44px; box-sizing: border-box">Regalar una suscripción</a>
+<a href="Regaleria.dc.html" style="border: 1.5px solid #121110; color: #121110; text-decoration: none; font-weight: 700; font-size: 15px; padding: 15px 24px; border-radius: 999px; min-height: 44px; box-sizing: border-box">Empresas</a>
+</div>
+</div>
+</section>
+
+<section id="nosotros" style="border-bottom: 1px solid #2A2724">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{accent}}; font-weight: 700">NOSOTROS</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6F0E8">Una taberna de familia. El lugar al que hay que ir.</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #B3AA9E">Barolo es una taberna selecta en Yerba Buena: vinos de muchas gamas, tapas y noches que no se olvidan. El club lleva esa misma selección a tu casa, con la confianza de quienes te atienden cada semana.</p>
+<a href="https://www.instagram.com/barolotabernaselecta/" style="align-self: flex-start; color: {{accent}}; font-weight: 700; font-size: 15px; text-decoration: none; padding: 12px 0">Seguinos en @barolotabernaselecta →</a>
+</div>
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<span style="font-size: 12px; letter-spacing: 1.5px; color: #B3AA9E; font-weight: 700">PRÓXIMOS ENCUENTROS DE SOCIOS</span>
+<sc-for list="{{events}}" as="e" hint-placeholder-count="3">
+<div style="display: flex; gap: 20px; align-items: center; padding: 18px 22px; border-radius: 16px; background: #1A1816; border: 1px solid #2A2724; flex-wrap: wrap">
+<span style="flex: none; width: 64px; text-align: center; display: flex; flex-direction: column; line-height: 1.05"><span style="font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 700; color: {{accent}}">{{e.day}}</span><span style="font-size: 12px; letter-spacing: 1.5px; color: #B3AA9E; font-weight: 700">{{e.mon}}</span></span>
+<span style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 16px; font-weight: 700; color: #F6F0E8">{{e.title}}</span><span style="font-size: 14px; color: #B3AA9E">{{e.text}}</span></span>
+<span style="font-size: 12px; font-weight: 700; color: {{accent}}; border: 1px solid #4A3526; padding: 6px 10px; border-radius: 999px">{{e.who}}</span>
+</div>
+</sc-for>
+<span style="font-size: 12px; color: #8E867C">Fechas de ejemplo para la presentación.</span>
+</div>
+</div>
+</section>
+
+<section id="notas" style="border-bottom: 1px solid #2A2724; background: #161412">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{accent}}; font-weight: 700">NOTAS Y TIPS</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6F0E8">Para disfrutar más cada copa.</h2>
+</div>
+<a href="#notas" style="color: {{accent}}; font-weight: 700; font-size: 15px; text-decoration: none; padding: 12px 0">Ver todas las notas →</a>
+</div>
+<div class="cards3">
+<sc-for list="{{notes}}" as="n" hint-placeholder-count="3">
+<a href="#notas" style="text-decoration: none; border-radius: 18px; overflow: hidden; background: #1A1816; border: 1px solid #2A2724; display: flex; flex-direction: column; color: #EDE6DC">
+<div style="height: 140px; background: {{n.tone}}; display: flex; align-items: flex-end; padding: 16px; box-sizing: border-box"><span style="font-size: 11px; font-weight: 800; letter-spacing: 1.5px; color: #121110; background: #F6F0E8; padding: 4px 9px; border-radius: 6px">{{n.cat}}</span></div>
+<div style="padding: 20px 22px 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 25px; font-weight: 600; line-height: 1.2; color: #F6F0E8">{{n.title}}</h3>
+<span style="font-size: 13px; color: #9C9388">{{n.read}}</span>
+</div>
+</a>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section id="preguntas" style="border-bottom: 1px solid #2A2724">
+<div style="max-width: 860px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{accent}}; font-weight: 700">PREGUNTAS FRECUENTES</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6F0E8">Lo que siempre nos preguntan.</h2>
+</div>
+<div style="display: flex; flex-direction: column">
+<sc-for list="{{faqs}}" as="f" hint-placeholder-count="8">
+<details style="border-top: 1px solid #2E2A26; padding: 20px 0">
+<summary style="font-size: 18px; font-weight: 600; color: #F6F0E8; display: flex; justify-content: space-between; gap: 16px; min-height: 28px">{{f.q}}<span style="color: {{accent}}; font-size: 22px; line-height: 1" aria-hidden="true">+</span></summary>
+<p style="margin: 12px 0 0; font-size: 15px; line-height: 1.65; color: #B3AA9E">{{f.a}}</p>
+</details>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section id="llamado" style="border-bottom: 1px solid #2A2724; background: radial-gradient(ellipse at 20% 80%, #2B1A10 0%, #121110 65%)">
+<div style="max-width: 1100px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{accent}}; font-weight: 700">¿PREFERÍS QUE TE LLAMEMOS?</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6F0E8">Te ayudamos a elegir tu plan.</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #B3AA9E">Dejanos tus datos y alguien de la casa te escribe por WhatsApp. O pasá por la taberna y lo charlamos con una copa.</p>
+</div>
+<div style="flex: 1 1 400px; min-width: 0; background: #1A1816; border: 1px solid #2E2A26; border-radius: 22px; padding: 30px; box-sizing: border-box">
+<sc-if value="{{showForm}}" hint-placeholder-val="{{ true }}">
+<form onSubmit="{{submit}}" style="display: flex; flex-direction: column; gap: 16px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 700; color: #C9C0B4">Nombre y apellido<input type="text" name="nombre" required style="min-height: 46px; padding: 0 14px; border-radius: 12px; border: 1px solid #3A3530; background: #121110; color: #F6F0E8; font-size: 15px"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 700; color: #C9C0B4">WhatsApp<input type="tel" name="telefono" required placeholder="381 ..." style="min-height: 46px; padding: 0 14px; border-radius: 12px; border: 1px solid #3A3530; background: #121110; color: #F6F0E8; font-size: 15px"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 700; color: #C9C0B4">Plan que te interesa<select name="plan" style="min-height: 46px; padding: 0 12px; border-radius: 12px; border: 1px solid #3A3530; background: #121110; color: #F6F0E8; font-size: 15px"><option>Todavía no sé</option><option>Descubrir</option><option>Taberna</option><option>Norte de Altura</option><option>Reserva</option><option>Blanca</option><option>Cava Privada</option><option>Oliva</option><option>Regalo / Empresas</option></select></label>
+<label style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: #B3AA9E; line-height: 1.5"><input type="checkbox" required style="width: 18px; height: 18px; margin-top: 1px; accent-color: #E8792B">Declaro ser mayor de 18 años.</label>
+<button type="submit" style="font-family: inherit; cursor: pointer; min-height: 48px; border: none; border-radius: 999px; background: {{accent}}; color: #121110; font-size: 16px; font-weight: 800">Quiero que me contacten</button>
+</form>
+</sc-if>
+<sc-if value="{{sent}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start; padding: 12px 0">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 600; color: {{accent}}">¡Gracias!</span>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C9C0B4">Te vamos a escribir por WhatsApp en las próximas horas para ayudarte a elegir tu plan.</p>
+<button type="button" onClick="{{reset}}" style="font-family: inherit; cursor: pointer; min-height: 44px; padding: 10px 18px; border-radius: 999px; background: transparent; border: 1px solid #5A534C; color: #F6F0E8; font-size: 14px; font-weight: 700">Enviar otra consulta</button>
+</div>
+</sc-if>
+</div>
+</div>
+</section>
+
+<footer id="contacto" style="background: #0D0C0B">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 40px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between">
+<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; letter-spacing: 2px; color: #F6F0E8">CLUB BAROLO SELECTO</span>
+<p style="margin: 0; font-size: 14px; line-height: 1.6; color: #9C9388; max-width: 320px">Vinos, tapas y experiencias que no se olvidan. El lugar al que hay que ir.</p>
+</div>
+<div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 12px; letter-spacing: 2px; color: #B3AA9E; font-weight: 700">EL CLUB</span>
+<a href="#planes" style="font-size: 15px; color: #EDE6DC; text-decoration: none">Suscripciones</a>
+<a href="#cava" style="font-size: 15px; color: #EDE6DC; text-decoration: none">La Cava de Barolo</a>
+<a href="#oliva" style="font-size: 15px; color: #EDE6DC; text-decoration: none">Oliva Barolo</a>
+<a href="#tienda" style="font-size: 15px; color: #EDE6DC; text-decoration: none">Tienda</a>
+</div>
+<div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 12px; letter-spacing: 2px; color: #B3AA9E; font-weight: 700">VISITANOS</span>
+<span style="font-size: 15px; color: #EDE6DC">Av. Perón, Yerba Buena</span>
+<span style="font-size: 15px; color: #EDE6DC">Tucumán, Argentina</span>
+</div>
+<div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 12px; letter-spacing: 2px; color: #B3AA9E; font-weight: 700">HABLEMOS</span>
+<a href="#llamado" style="font-size: 15px; color: #EDE6DC; text-decoration: none">WhatsApp de reservas</a>
+<a href="https://www.instagram.com/barolotabernaselecta/" style="font-size: 15px; color: #EDE6DC; text-decoration: none">@barolotabernaselecta</a>
+<a href="#preguntas" style="font-size: 15px; color: #EDE6DC; text-decoration: none">Preguntas frecuentes</a>
+</div>
+</div>
+<div style="border-top: 1px solid #24211E; padding-top: 22px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between">
+<span style="font-size: 12px; color: #8E867C">BEBER CON MODERACIÓN. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS.</span>
+<span style="font-size: 12px; color: #8E867C">© 2026 Barolo · Taberna Selecta</span>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#E8792B","options":["#E8792B","#C9A24A","#B5473A"]},"$preview":{"width":1440,"height":9400}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { filter: 'Todos', cat: 'Todo', alt: {}, sent: false };
+  }
+  renderVals() {
+    var self = this;
+    var accent = this.props.accent || '#E8792B';
+    var st = this.state;
+    function chip(label, active, onPick) {
+      return { label: label, pressed: active ? 'true' : 'false', pick: onPick,
+        bg: active ? accent : 'transparent', color: active ? '#121110' : '#EDE6DC', border: active ? accent : '#4A443E' };
+    }
+    var raw = [{"id": "desc", "group": "Tintos", "featured": false, "tag": "FAN DEL MALBEC", "name": "Descubrir", "desc": "Dos Malbec de orígenes distintos: uno de Tucumán y uno de Mendoza.", "a": {"bottles": "2", "price": "$21.500", "old": "$24.500", "off": "AHORRÁS 12%", "note": "por mes · sueltos valen $24.500"}, "wines": ["Altos La Ciénaga Don Javier Malbec (Tucumán)", "Escorihuela Gascón Malbec (Mendoza)"]}, {"id": "tab", "group": "Mixtos", "featured": true, "tag": "CLIENTE DE LA CASA", "name": "Taberna", "desc": "Dos tintos para descubrir y un blanco del Norte para variar.", "a": {"bottles": "3", "price": "$45.200", "old": "$51.400", "off": "AHORRÁS 12%", "note": "por mes · sueltos valen $51.400"}, "wines": ["Gauchezco Reserva Malbec (Mendoza)", "Domingo Hermanos Malbec Tannat (Cafayate)", "Colomé Estate Torrontés (Salta)"]}, {"id": "norte", "group": "Tintos", "featured": false, "tag": "CURIOSO DEL TERROIR", "name": "Norte de Altura", "desc": "Tres tintos de altura: Tucumán, La Rioja y Salta.", "a": {"bottles": "3", "price": "$42.900", "old": "$48.800", "off": "AHORRÁS 12%", "note": "por mes · sueltos valen $48.800"}, "wines": ["Cascara Negra Malbec (Colalao del Valle, Tucumán)", "Chañarmuyo Gran Vino Tannat (La Rioja)", "Cola de Zorro Cabernet (Salta)"]}, {"id": "res", "group": "Premium", "featured": false, "tag": "PALADAR EXIGENTE", "name": "Reserva", "desc": "Dos tintos de alta gama para una ocasión especial.", "a": {"bottles": "2", "price": "$72.000", "old": "$81.900", "off": "AHORRÁS 12%", "note": "por mes · sueltos valen $81.900"}, "wines": ["Gran Enemigo El Cepillo (Mendoza)", "San Pedro Yacochuya Malbec El Agapo (Salta)"]}, {"id": "blanca", "group": "Blancos", "featured": false, "tag": "EXPLORADOR APASIONADO", "name": "Blanca", "desc": "Dos blancos con carácter: uno de Mendoza y uno de los Valles Calchaquíes.", "a": {"bottles": "2", "price": "$48.400", "old": "$55.100", "off": "AHORRÁS 12%", "note": "por mes · sueltos valen $55.100"}, "wines": ["Terrazas Reserva Chardonnay (Mendoza)", "Tacuil RD Blanco (Salta)"]}, {"id": "cava", "group": "Premium", "featured": false, "tag": "COLECCIONISTA", "name": "Cava Privada", "desc": "Tres íconos: Salta y Mendoza en su mejor versión. Cupos limitados.", "a": {"bottles": "3", "price": "$187.200", "old": "$212.800", "off": "AHORRÁS 12%", "note": "por mes · sueltos valen $212.800"}, "wines": ["Tacuil 33 de Dávalos (Salta)", "Yacochuya Malbec (Salta)", "Malbec Argentino (Mendoza)"]}];
+    var reds = ['#3A1A16', '#2A1712', '#4A1E1A', '#331A22', '#24140F', '#40221A'];
+    var whites = ['#C9C08A', '#B7B37A', '#D3C79A'];
+    var labels = ['#F3ECE2', '#E8792B', '#121110', '#D9CBB4', '#F6F0E8', '#9C2F25'];
+    function bottles(n, kind, seed) {
+      var out = [];
+      var count = Math.min(n, 6);
+      for (var i = 0; i < count; i++) {
+        var k = (i + seed) % 6;
+        var fill = kind === 'white' ? whites[k % 3] : kind === 'mix' && i === count - 1 ? whites[seed % 3] : kind === 'oil' ? ['#5E6B1A', '#7A7A22', '#4E5A16'][k % 3] : kind === 'spirit' ? '#BFD6D0' : reds[k];
+        var label = labels[(k + 1) % 6];
+        var dark = label === '#121110' || label === '#9C2F25' || label === '#E8792B';
+        var h = Math.round((count > 4 ? 120 : 140) + (i % 2 ? -8 : 0));
+        out.push({ fill: fill, label: label, ink: dark ? '#F6F0E8' : '#121110', cap: i % 2 ? '#121110' : accent, h: h, w: Math.round(h * 62 / 220) });
+      }
+      return out;
+    }
+    var planKinds = { desc: 'red', tab: 'mix', norte: 'red', res: 'red', blanca: 'white', cava: 'red' };
+    var groups = ['Todos', 'Tintos', 'Mixtos', 'Blancos', 'Premium'];
+    var filters = groups.map(function (g) { return chip(g, st.filter === g, function () { self.setState({ filter: g }); }); });
+    var plans = raw.filter(function (p) { return st.filter === 'Todos' || p.group === st.filter; }).map(function (p) {
+      var useB = !!(p.b && st.alt[p.id]);
+      var v = useB ? p.b : p.a;
+      var setAlt = function (val) { return function () { var n = Object.assign({}, self.state.alt); n[p.id] = val; self.setState({ alt: n }); }; };
+      return {
+        name: p.name, tag: p.tag, desc: p.desc, wines: p.wines, featured: !!p.featured,
+        imgs: bottles(parseInt(v.bottles, 10), planKinds[p.id], p.name.length),
+        bottles: v.bottles, price: v.price, priceNote: v.note,
+        hasOld: !!v.old, oldPrice: v.old || '', hasOff: !!v.off, off: v.off || '',
+        hasAlt: !!p.b, aLabel: p.a.label || '', bLabel: p.b ? p.b.label : '',
+        pickA: setAlt(false), pickB: setAlt(true),
+        aOn: useB ? 'false' : 'true', bOn: useB ? 'true' : 'false',
+        aBg: useB ? 'transparent' : accent, aColor: useB ? '#C9C0B4' : '#121110',
+        bBg: useB ? accent : 'transparent', bColor: useB ? '#121110' : '#C9C0B4',
+        bg: p.featured ? '#1F1813' : '#1A1816',
+        border: p.featured ? ('1.5px solid ' + accent) : '1px solid #2A2724',
+        btnBg: p.featured ? accent : 'transparent', btnColor: p.featured ? '#121110' : '#F6F0E8'
+      };
+    });
+    var allPacks = [{"cat": "Vinos", "label": "PACK x3", "tone": "#3A1A16", "tag": "NORTE", "name": "Tucumán en la copa", "detail": "Altos La Ciénaga TSM · Siete Vacas Tannat Reserva · El Arbolar Blend", "price": "$53.200", "member": "$45.200"}, {"cat": "Vinos", "label": "PACK x4", "tone": "#2B2116", "tag": "NORTE", "name": "Cafayate x4", "detail": "Domingo Molina Malbec · Piloto de Prueba Selección Blend · Ostengo Malbec Reserva Cafayate · Yeta Torrontés Sauvignon Blanc", "price": "$77.100", "member": "$65.500"}, {"cat": "Vinos", "label": "PACK x4", "tone": "#33201A", "tag": "MÁS ELEGIDO", "name": "Malbec de 4 provincias", "detail": "Cola de Zorro Malbec · Chañarmuyo Gran Vino Malbec · Chico Zossi Malbec · Luigi Bosca de Sangre Malbec Valle de Uco", "price": "$66.400", "member": "$56.400"}, {"cat": "Vinos", "label": "PACK x6", "tone": "#2A2A1A", "tag": "OFERTA", "name": "Pack Asado x6", "detail": "Escorihuela Gascón Malbec · Trumpeter Reserva Malbec · Budeguer 4000 Gran Reserva Malbec · Siete Vacas Origen Malbec · Coquena Corte · Rio de Arena Malbec", "price": "$70.100", "member": "$59.500"}, {"cat": "Vinos", "label": "PACK x3", "tone": "#2C2E16", "tag": "FIESTAS", "name": "Burbujas x3", "detail": "Chandon Extra Brut · Escorihuela Gascón Extra Brut Rosé · Las Perdices Método Champenoise", "price": "$50.400", "member": "$42.800"}, {"cat": "Regalos", "label": "ESTUCHE", "tone": "#4A2A12", "tag": "REGALO", "name": "Las Perdices Don Juan", "detail": "Viña Las Perdices · Mendoza", "price": "$32.800", "member": "$27.800"}, {"cat": "Regalos", "label": "ESTUCHE REGALO", "tone": "#4A2A12", "tag": "REGALO", "name": "Las Perdices Tinamú + Copa", "detail": "Viña Las Perdices · Mendoza", "price": "$65.600", "member": "$55.700"}, {"cat": "Whiskys", "label": "WHISKY", "tone": "#3A2A14", "tag": "", "name": "The Glenlivet 12 Años 700 ml", "detail": "Whisky", "price": "$69.400", "member": "$58.900"}, {"cat": "Spirits", "label": "GIN", "tone": "#1F2A26", "tag": "", "name": "Gin Bombay Sapphire 750 ml", "detail": "Gin", "price": "$39.300", "member": "$33.400"}];
+    var catNames = ['Todo', 'Vinos', 'Regalos', 'Whiskys', 'Spirits'];
+    var cats = catNames.map(function (c) { return chip(c, st.cat === c, function () { self.setState({ cat: c }); }); });
+    var packs = allPacks.filter(function (p) { return st.cat === 'Todo' || p.cat === st.cat; }).map(function (p) {
+      var n = p.label.indexOf('x6') > -1 ? 6 : p.label.indexOf('x4') > -1 ? 4 : p.label.indexOf('x3') > -1 || p.label.indexOf('X3') > -1 ? 3 : p.label.indexOf('x3') > -1 || p.label.indexOf('X3') > -1 ? 3 : p.label.indexOf('x3') > -1 || p.label.indexOf('X3') > -1 ? 3 : p.cat === 'Regalos' ? 3 : p.cat === 'Aceites' ? 3 : 1;
+      var kind = p.cat === 'Aceites' ? 'oil' : (p.cat === 'Whiskys' || p.cat === 'Spirits') ? 'spirit' : 'red';
+      return Object.assign({}, p, { hasTag: !!p.tag, imgs: bottles(n, kind, p.name.length) });
+    });
+    var cavaRaw = [
+      { month: 'NOVIEMBRE', plan: 'Taberna', title: 'Frescura en todos los colores', now: true },
+      { month: 'NOVIEMBRE', plan: 'Reserva', title: 'El carácter no se mide en peso', now: true },
+      { month: 'NOVIEMBRE', plan: 'Descubrir', title: 'Malbec con peso propio', now: true },
+      { month: 'NOVIEMBRE', plan: 'Cava Privada', title: 'Tintos con mucho que decir', now: true },
+      { month: 'OCTUBRE', plan: 'Blanca', title: 'Otra manera de pensar el blanco' },
+      { month: 'OCTUBRE', plan: 'Norte de Altura', title: 'La cima tiene varios caminos' }
+    ];
+    var cava = cavaRaw.map(function (c) { return Object.assign({}, c, { chipBg: c.now ? accent : '#B3AA9E' }); });
+    return {
+      accent: accent,
+      filters: filters,
+      plans: plans,
+      cats: cats,
+      packs: packs,
+      noPacks: packs.length === 0,
+      cava: cava,
+      benefits: [
+        { big: '15%', title: 'Descuento en Barolo', text: 'En toda la carta de comida y bebida, con tu credencial digital.' },
+        { big: 'Ma', title: 'Martes de socios', text: 'Copa de bienvenida y precio especial todos los martes.' },
+        { big: 'Ct', title: 'Cata mensual', text: 'Presentamos la caja del mes en la taberna, con la bodega invitada.' },
+        { big: '0$', title: 'Envío sin cargo', text: 'Te bonificamos el 100% de la entrega de tu caja en Tucumán.' },
+        { big: '15%', title: 'Precio socio en la tienda', text: '15% menos en toda la tienda y entrega sin cargo, con 3 cuotas sin interés.' },
+        { big: 'BA', title: 'Experiencias y eventos', text: 'Acceso anticipado a Barolo Fiesta, el Aniversario y las noches de bodega.' }
+      ],
+      events: [
+        { day: '10', mon: 'DIC', title: 'Cata de socios: la caja de diciembre', text: 'Presentación de la selección con la bodega invitada.', who: 'Todos los socios' },
+        { day: '17', mon: 'DIC', title: 'Martes de socios · Espumantes', text: 'Copa de bienvenida y precio especial en espumantes.', who: 'Todos los socios' },
+        { day: '24', mon: 'ENE', title: 'Cena con enólogo', text: 'Menú de pasos maridado, mesa reservada.', who: 'Cava Privada' }
+      ],
+      notes: [
+        { cat: 'GUARDA', tone: '#2B1A10', title: 'Cómo guardar tus vinos en casa sin una cava', read: 'Lectura de 4 minutos' },
+        { cat: 'MARIDAJE', tone: '#3A1A16', title: 'Qué vino llevar a un asado (y cuál al postre)', read: 'Lectura de 5 minutos' },
+        { cat: 'TERROIR', tone: '#2C2E16', title: 'Vinos de altura: por qué el Norte sabe distinto', read: 'Lectura de 6 minutos' }
+      ],
+      faqs: [
+        { q: '¿Cómo me suscribo?', a: 'Online, eligiendo tu plan en esta página, o en la taberna. Si preferís asesoramiento, dejanos tus datos y te escribimos por WhatsApp.' },
+        { q: '¿Cómo se paga la suscripción?', a: 'Con débito automático mensual en tarjeta de crédito o débito, a través de Mercado Pago.' },
+        { q: '¿Puedo suscribirme a más de una selección?', a: 'Sí, podés sumar todas las suscripciones que quieras, incluida Oliva.' },
+        { q: '¿Cuándo recibo mi caja?', a: 'La primera semana de cada mes. Te avisamos el día de entrega o cuándo está lista para retirar en la taberna.' },
+        { q: '¿Puedo suspender temporalmente las entregas?', a: 'Sí, podés pausar 1, 2 o 3 meses. Después la suscripción se reactiva sola. También podés darte de baja online.' },
+        { q: '¿Puedo elegir los vinos que recibo?', a: 'La casa elige los vinos en catas a ciegas, pero podés cambiar uno de la caja si ya lo tenés o no te gusta la cepa.' },
+        { q: 'Si me gustó un vino, ¿puedo volver a comprarlo?', a: 'Sí. Los vinos de las selecciones están en la tienda, con 15% menos para socios y entrega sin cargo.' },
+        { q: '¿Envían fuera de Tucumán?', a: 'Por ahora entregamos en Yerba Buena y San Miguel de Tucumán. Muy pronto, al resto del país.' }
+      ],
+      showForm: !st.sent,
+      sent: st.sent,
+      submit: function (ev) { if (ev && ev.preventDefault) ev.preventDefault(); self.setState({ sent: true }); },
+      reset: function () { self.setState({ sent: false }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="logo-barolo.png">
+<title>Club de Habanos Barolo — Área de socios</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#120F0C;}
+a{color:#C9A24A}a:hover{color:#E2BE6A}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.nav-links{display:flex;gap:26px;flex-wrap:wrap}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+@media (max-width:860px){.nav-links{display:none}.hero-title{font-size:44px !important}.sec-title{font-size:34px !important}}
+</style>
+</helmet>
+<div style="font-family: 'Manrope', system-ui, sans-serif; color: #EDE3D4; background: #120F0C; min-height: 100vh; width: 100%">
+
+<div role="note" style="background: #F6F0E8; color: #121110; text-align: center; font-size: 13px; font-weight: 800; padding: 10px 16px; letter-spacing: 0.5px">FUMAR ES PERJUDICIAL PARA LA SALUD · Venta exclusiva a mayores de 18 años</div>
+
+<header style="border-bottom: 1px solid #2C251E; background: #120F0C">
+<div style="max-width: 1280px; margin: 0 auto; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
+<a href="Main.dc.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #EDE3D4">
+<img src="logo-barolo.png" alt="Logo de Barolo" width="46" height="46" style="width: 46px; height: 46px; border-radius: 50%; display: block">
+<span style="display: flex; flex-direction: column; line-height: 1.1"><span style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; letter-spacing: 2px">BAROLO</span><span style="font-size: 11px; letter-spacing: 3px; color: #B5A892">CLUB DE HABANOS</span></span>
+</a>
+<nav class="nav-links" aria-label="Secciones">
+<a href="Main.dc.html" style="color: #EDE3D4; text-decoration: none; font-size: 14px; font-weight: 500">Suscripción de vinos</a>
+<a href="Tienda.dc.html" style="color: #EDE3D4; text-decoration: none; font-size: 14px; font-weight: 500">Tienda</a>
+<a href="Regaleria.dc.html" style="color: #EDE3D4; text-decoration: none; font-size: 14px; font-weight: 500">Regalería</a>
+<a href="#planes" style="color: {{gold}}; text-decoration: none; font-size: 14px; font-weight: 800; border: 1px solid {{gold}}; padding: 6px 14px; border-radius: 999px">Habanos</a>
+<a href="#packs" style="color: #EDE3D4; text-decoration: none; font-size: 14px; font-weight: 500">Packs del mes</a>
+<a href="#productos" style="color: #EDE3D4; text-decoration: none; font-size: 14px; font-weight: 500">Productos</a>
+</nav>
+<span style="font-size: 13px; font-weight: 700; color: #B5A892; border: 1px solid #3A3128; padding: 10px 14px; border-radius: 999px">Área privada · +18</span>
+</div>
+</header>
+
+<sc-if value="{{locked}}" hint-placeholder-val="{{ false }}">
+<section aria-label="Verificación de edad" style="padding: 120px 24px; display: flex; justify-content: center">
+<div style="max-width: 560px; width: 100%; background: #1C1712; border: 1px solid #3A3128; border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 20px; text-align: center; align-items: center; box-sizing: border-box">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 44px; font-weight: 700; color: {{gold}}">+18</span>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 600; color: #F6EEE2; line-height: 1.1">Esta sección es solo para socios mayores de edad</h1>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #B5A892">Para ver la suscripción y los productos de habanos tenés que ser mayor de 18 años e ingresar con tu cuenta de socio.</p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center">
+<button type="button" onClick="{{enter}}" style="font-family: inherit; cursor: pointer; min-height: 48px; padding: 12px 24px; border-radius: 999px; border: none; background: {{gold}}; color: #120F0C; font-size: 15px; font-weight: 800">Soy mayor de 18 · Ingresar</button>
+<a href="Main.dc.html" style="min-height: 48px; box-sizing: border-box; padding: 13px 24px; border-radius: 999px; border: 1px solid #5A4E40; color: #EDE3D4; text-decoration: none; font-size: 15px; font-weight: 700">Volver</a>
+</div>
+<span style="font-size: 12px; color: #8F8472">FUMAR ES PERJUDICIAL PARA LA SALUD</span>
+</div>
+</section>
+</sc-if>
+
+<sc-if value="{{open}}" hint-placeholder-val="{{ true }}">
+
+<section style="border-bottom: 1px solid #2C251E; background: radial-gradient(ellipse at 80% 30%, #3A2814 0%, #120F0C 62%)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 52px; align-items: center">
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<span style="align-self: flex-start; border: 1px solid #5A4628; color: {{gold}}; font-size: 12px; letter-spacing: 2.5px; font-weight: 800; padding: 8px 14px; border-radius: 999px">NUEVO · CLUB DE HABANOS BAROLO</span>
+<h1 class="hero-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 70px; line-height: 1.02; color: #F6EEE2">Una selección de habanos,<br><span style="font-style: italic; color: {{gold}}">cada mes</span>, para el socio que sabe.</h1>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #C9BCA8; max-width: 560px">Vitolas de {{brand1}} y {{brand2}} elegidas por la casa, con ficha de cata, maridaje sugerido con nuestros vinos y spirits, y acceso a las noches de habanos en Barolo.</p>
+<div style="display: flex; gap: 14px; flex-wrap: wrap">
+<a href="#planes" style="background: {{gold}}; color: #120F0C; text-decoration: none; font-weight: 800; font-size: 16px; padding: 16px 28px; border-radius: 999px; min-height: 44px; box-sizing: border-box">Ver planes</a>
+<a href="#packs" style="border: 1px solid #5A4E40; color: #EDE3D4; text-decoration: none; font-weight: 700; font-size: 16px; padding: 16px 28px; border-radius: 999px; min-height: 44px; box-sizing: border-box">Packs del mes</a>
+</div>
+</div>
+<div style="flex: 1 1 360px; min-width: 0; border-radius: 24px; background: #5A3A1E; border: 8px solid #3A2512; box-shadow: inset 0 0 0 2px #7A5530; padding: 26px 22px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; align-items: stretch">
+<span style="align-self: center; font-family: 'Cormorant Garamond', serif; font-size: 15px; letter-spacing: 4px; font-weight: 700; color: #F0D9A8">CAJA DEL MES · NOVIEMBRE</span>
+<sc-for list="{{heroCigars}}" as="c" hint-placeholder-count="6">
+<svg width="100%" height="34" viewBox="0 0 320 34" preserveAspectRatio="none" aria-hidden="true"><rect x="2" y="5" width="300" height="24" rx="12" fill="{{c.wrap}}"/><rect x="2" y="5" width="300" height="5" rx="2.5" fill="#FFFFFF" opacity="0.08"/><rect x="58" y="5" width="34" height="24" fill="{{c.band}}"/><rect x="62" y="12" width="26" height="10" rx="2" fill="#F6EEE2" opacity="0.85"/><path d="M302 5h6a12 12 0 0 1 0 24h-6z" fill="{{c.foot}}"/></svg>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section aria-label="Cómo funciona" style="border-bottom: 1px solid #2C251E">
+<div class="grid3" style="max-width: 1280px; margin: 0 auto; padding: 56px 24px">
+<div style="display: flex; gap: 16px; align-items: flex-start"><span style="font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 700; color: {{gold}}; line-height: 1">01</span><span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 17px; color: #F6EEE2">Elegí tu plan</strong><span style="font-size: 14px; line-height: 1.55; color: #B5A892">De la iniciación a las ediciones limitadas.</span></span></div>
+<div style="display: flex; gap: 16px; align-items: flex-start"><span style="font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 700; color: {{gold}}; line-height: 1">02</span><span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 17px; color: #F6EEE2">Retirá en Barolo o recibí en tu casa</strong><span style="font-size: 14px; line-height: 1.55; color: #B5A892">Entrega solo en mano a un mayor de 18 con DNI.</span></span></div>
+<div style="display: flex; gap: 16px; align-items: flex-start"><span style="font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 700; color: {{gold}}; line-height: 1">03</span><span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 17px; color: #F6EEE2">Disfrutá con el maridaje justo</strong><span style="font-size: 14px; line-height: 1.55; color: #B5A892">Cada vitola trae su vino, whisky o ron sugerido.</span></span></div>
+</div>
+</section>
+
+<section id="planes" style="border-bottom: 1px solid #2C251E; background: #16120E">
+<div style="max-width: 1280px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{gold}}; font-weight: 800">HABANOS POR SUSCRIPCIÓN</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6EEE2">Tres planes, una caja nueva cada mes.</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #B5A892">Se puede combinar con cualquier suscripción de vinos y obtener un 10% extra en ambas.</p>
+</div>
+<div class="grid3">
+<sc-for list="{{plans}}" as="p" hint-placeholder-count="3">
+<article style="background: {{p.bg}}; border: {{p.border}}; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column; position: relative">
+<div style="background: #5A3A1E; border-bottom: 6px solid #3A2512; padding: 22px 26px; display: flex; flex-direction: column; gap: 7px; min-height: 170px; box-sizing: border-box; justify-content: center">
+<sc-for list="{{p.cigars}}" as="c" hint-placeholder-count="4">
+<svg width="100%" height="20" viewBox="0 0 320 20" preserveAspectRatio="none" aria-hidden="true"><rect x="2" y="2" width="300" height="16" rx="8" fill="{{c.wrap}}"/><rect x="58" y="2" width="30" height="16" fill="{{c.band}}"/><path d="M302 2h5a8 8 0 0 1 0 16h-5z" fill="{{c.foot}}"/></svg>
+</sc-for>
+</div>
+<sc-if value="{{p.featured}}" hint-placeholder-val="{{ false }}">
+<span style="position: absolute; top: 14px; right: 14px; background: {{gold}}; color: #120F0C; font-size: 11px; font-weight: 800; letter-spacing: 1.5px; padding: 6px 12px; border-radius: 999px">MÁS ELEGIDO</span>
+</sc-if>
+<div style="padding: 24px 26px 28px; display: flex; flex-direction: column; gap: 14px; flex-grow: 1">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 12px; letter-spacing: 2px; color: #B5A892; font-weight: 800">{{p.tag}}</span>
+<h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 600; color: #F6EEE2">{{p.name}}</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.55; color: #C9BCA8">{{p.desc}}</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px; padding: 14px 0; border-top: 1px solid #3A3128; border-bottom: 1px solid #3A3128">
+<span style="font-size: 14px; color: #B5A892"><strong style="color: #F6EEE2; font-size: 18px">{{p.qty}}</strong> habanos por mes</span>
+<sc-if value="{{p.hasOld}}" hint-placeholder-val="{{ false }}"><span style="font-size: 15px; color: #8F8472; text-decoration: line-through">{{p.old}}</span></sc-if>
+<span style="display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap"><span style="font-family: 'Cormorant Garamond', serif; font-size: 42px; font-weight: 700; color: {{gold}}; line-height: 1.1">{{p.price}}</span><sc-if value="{{p.hasOff}}" hint-placeholder-val="{{ false }}"><span style="font-size: 12px; font-weight: 800; color: #120F0C; background: {{gold}}; padding: 3px 8px; border-radius: 6px">{{p.off}}</span></sc-if></span>
+<span style="font-size: 12px; color: #9C907C">{{p.note}}</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+<span style="font-size: 12px; letter-spacing: 1.5px; color: #B5A892; font-weight: 800">INCLUYE</span>
+<sc-for list="{{p.items}}" as="it" hint-placeholder-count="4">
+<span style="font-size: 14px; line-height: 1.45; color: #E6DACA; display: flex; gap: 8px"><span style="color: {{gold}}" aria-hidden="true">●</span>{{it}}</span>
+</sc-for>
+</div>
+<a href="#contacto" style="text-align: center; background: {{p.btnBg}}; color: {{p.btnColor}}; border: 1px solid {{gold}}; text-decoration: none; font-weight: 800; font-size: 15px; padding: 13px 18px; border-radius: 999px; min-height: 44px; box-sizing: border-box">Suscribirme a {{p.name}}</a>
+</div>
+</article>
+</sc-for>
+</div>
+<p style="margin: 0; font-size: 13px; color: #8F8472">Precios y contenidos de ejemplo para la presentación. Vitolas sujetas a disponibilidad.</p>
+</div>
+</section>
+
+<section id="marcas" style="border-bottom: 1px solid #2C251E">
+<div style="max-width: 1280px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 700px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{gold}}; font-weight: 800">NUESTRAS MARCAS</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6EEE2">Dos casas, dos estilos.</h2>
+</div>
+<div class="grid3">
+<sc-for list="{{brands}}" as="b" hint-placeholder-count="2">
+<article style="border-radius: 22px; background: #1C1712; border: 1px solid #3A3128; overflow: hidden; display: flex; flex-direction: column">
+<div style="height: 150px; background: {{b.tone}}; display: flex; align-items: center; justify-content: center">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 700; letter-spacing: 3px; color: #F0D9A8; border-top: 1px solid #F0D9A8; border-bottom: 1px solid #F0D9A8; padding: 6px 22px">{{b.name}}</span>
+</div>
+<div style="padding: 24px 26px 28px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 12px; letter-spacing: 2px; color: #B5A892; font-weight: 800">{{b.style}}</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #C9BCA8">{{b.desc}}</p>
+<div style="display: flex; gap: 8px; flex-wrap: wrap">
+<sc-for list="{{b.vitolas}}" as="v" hint-placeholder-count="4">
+<span style="font-size: 13px; font-weight: 700; color: #EDE3D4; border: 1px solid #4A3F33; padding: 6px 12px; border-radius: 999px">{{v}}</span>
+</sc-for>
+</div>
+</div>
+</article>
+</sc-for>
+<div style="border-radius: 22px; border: 1px dashed #5A4628; padding: 28px; display: flex; flex-direction: column; gap: 12px; justify-content: center">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; color: #F6EEE2">Ficha de cada habano</span>
+<span style="font-size: 14px; color: #B5A892">Vitola y medidas · Fortaleza · Notas de cata · Tiempo de fumada · Maridaje con un vino o spirit de Barolo</span>
+</div>
+</div>
+</div>
+</section>
+
+<section id="packs" style="border-bottom: 1px solid #2C251E; background: #16120E">
+<div style="max-width: 1280px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 700px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{gold}}; font-weight: 800">PACKS Y OFERTAS DE NOVIEMBRE</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6EEE2">Packs del mes.</h2>
+</div>
+<span style="font-size: 14px; color: #C9BCA8">Se renuevan cada mes · precio socio</span>
+</div>
+<div class="grid4">
+<sc-for list="{{packs}}" as="p" hint-placeholder-count="6">
+<article style="background: #1C1712; border: 1px solid #3A3128; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div style="height: 160px; background: {{p.bg}}; position: relative; display: flex; flex-direction: column; justify-content: center; gap: 6px; padding: 18px 22px; box-sizing: border-box">
+<sc-if value="{{p.hasTag}}" hint-placeholder-val="{{ false }}"><span style="position: absolute; top: 10px; left: 10px; font-size: 11px; font-weight: 800; color: #120F0C; background: {{gold}}; padding: 4px 8px; border-radius: 6px">{{p.tag}}</span></sc-if>
+<sc-for list="{{p.cigars}}" as="c" hint-placeholder-count="3">
+<svg width="100%" height="16" viewBox="0 0 320 16" preserveAspectRatio="none" aria-hidden="true"><rect x="2" y="2" width="300" height="12" rx="6" fill="{{c.wrap}}"/><rect x="58" y="2" width="30" height="12" fill="{{c.band}}"/><path d="M302 2h4a6 6 0 0 1 0 12h-4z" fill="{{c.foot}}"/></svg>
+</sc-for>
+<sc-if value="{{p.hasExtra}}" hint-placeholder-val="{{ false }}"><span style="align-self: flex-start; margin-top: 6px; font-size: 12px; font-weight: 800; color: #F0D9A8; border: 1px solid #F0D9A8; padding: 4px 10px; border-radius: 999px">+ {{p.extra}}</span></sc-if>
+</div>
+<div style="padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+<h3 style="margin: 0; font-size: 16px; font-weight: 800; line-height: 1.35; color: #F6EEE2">{{p.name}}</h3>
+<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #9C907C; flex-grow: 1">{{p.detail}}</p>
+<span style="font-size: 14px; color: #8F8472; text-decoration: line-through">{{p.price}}</span>
+<span style="display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 700; color: {{gold}}; line-height: 1">{{p.member}}</span><span style="font-size: 12px; color: #B5A892">socios</span></span>
+<button type="button" onClick="{{p.add}}" style="margin-top: 6px; font-family: inherit; cursor: pointer; min-height: 44px; border-radius: 999px; font-size: 14px; font-weight: 800; background: {{p.btnBg}}; color: {{p.btnColor}}; border: 1px solid {{gold}}">{{p.btnLabel}}</button>
+</div>
+</article>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section id="productos" style="border-bottom: 1px solid #2C251E">
+<div style="max-width: 1280px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 700px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{gold}}; font-weight: 800">PRODUCTOS</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6EEE2">Habanos sueltos, cajas y accesorios.</h2>
+</div>
+<span style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid #4A3F33; font-size: 14px; font-weight: 800" aria-live="polite">Carrito <span style="background: {{gold}}; color: #120F0C; border-radius: 999px; padding: 2px 9px; font-size: 12px">{{cart}}</span></span>
+</div>
+<div role="group" aria-label="Filtrar productos" style="display: flex; gap: 10px; flex-wrap: wrap">
+<sc-for list="{{cats}}" as="ct" hint-placeholder-count="5">
+<button type="button" onClick="{{ct.pick}}" aria-pressed="{{ct.pressed}}" style="font-family: inherit; cursor: pointer; min-height: 44px; padding: 10px 18px; border-radius: 999px; font-size: 14px; font-weight: 800; background: {{ct.bg}}; color: {{ct.color}}; border: 1px solid {{ct.border}}">{{ct.label}}</button>
+</sc-for>
+</div>
+<div class="grid4">
+<sc-for list="{{products}}" as="p" hint-placeholder-count="8">
+<article style="background: #1C1712; border: 1px solid #3A3128; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div style="height: 150px; background: #E9DFCF; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box">
+<sc-if value="{{p.isCigar}}" hint-placeholder-val="{{ true }}">
+<div style="width: 100%; display: flex; flex-direction: column; gap: 6px">
+<sc-for list="{{p.cigars}}" as="c" hint-placeholder-count="2">
+<svg width="100%" height="18" viewBox="0 0 320 18" preserveAspectRatio="none" aria-hidden="true"><rect x="2" y="2" width="300" height="14" rx="7" fill="{{c.wrap}}"/><rect x="58" y="2" width="30" height="14" fill="{{c.band}}"/><path d="M302 2h4a7 7 0 0 1 0 14h-4z" fill="{{c.foot}}"/></svg>
+</sc-for>
+</div>
+</sc-if>
+<sc-if value="{{p.isAcc}}" hint-placeholder-val="{{ false }}">
+<span style="width: 84px; height: 84px; border-radius: 50%; background: #2C251E; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; color: #F0D9A8">{{p.ini}}</span>
+</sc-if>
+</div>
+<div style="padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+<span style="font-size: 11px; letter-spacing: 1.5px; color: #B5A892; font-weight: 800">{{p.kind}}</span>
+<h3 style="margin: 0; font-size: 15px; font-weight: 800; line-height: 1.4; color: #F6EEE2; flex-grow: 1">{{p.name}}</h3>
+<span style="font-size: 14px; color: #8F8472; text-decoration: line-through">{{p.price}}</span>
+<span style="display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 700; color: {{gold}}; line-height: 1">{{p.member}}</span><span style="font-size: 12px; color: #B5A892">socios</span></span>
+<button type="button" onClick="{{p.add}}" style="margin-top: 6px; font-family: inherit; cursor: pointer; min-height: 44px; border-radius: 999px; font-size: 14px; font-weight: 800; background: {{p.btnBg}}; color: {{p.btnColor}}; border: 1px solid {{gold}}">{{p.btnLabel}}</button>
+</div>
+</article>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="border-bottom: 1px solid #2C251E; background: radial-gradient(ellipse at 15% 60%, #3A2814 0%, #16120E 60%)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{gold}}; font-weight: 800">EXPERIENCIAS DE SOCIOS</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6EEE2">Noches de habanos en Barolo.</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #B5A892">Una vez al mes, en el espacio habilitado para fumadores: degustación de dos vitolas guiada, maridaje con whisky, ron o un tinto de guarda, y tapas de la casa.</p>
+</div>
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<sc-for list="{{events}}" as="e" hint-placeholder-count="3">
+<div style="display: flex; gap: 18px; align-items: center; padding: 16px 20px; border-radius: 16px; background: #1C1712; border: 1px solid #3A3128">
+<span style="width: 56px; text-align: center; display: flex; flex-direction: column; line-height: 1.05"><span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 700; color: {{gold}}">{{e.day}}</span><span style="font-size: 11px; letter-spacing: 1.5px; color: #B5A892; font-weight: 800">{{e.mon}}</span></span>
+<span style="display: flex; flex-direction: column; gap: 3px"><strong style="font-size: 15px; color: #F6EEE2">{{e.title}}</strong><span style="font-size: 13px; color: #B5A892">{{e.text}}</span></span>
+</div>
+</sc-for>
+<span style="font-size: 12px; color: #8F8472">Fechas de ejemplo para la presentación.</span>
+</div>
+</div>
+</section>
+
+<section id="preguntas" style="border-bottom: 1px solid #2C251E">
+<div style="max-width: 860px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 28px">
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 46px; line-height: 1.05; color: #F6EEE2">Preguntas frecuentes</h2>
+<div style="display: flex; flex-direction: column">
+<sc-for list="{{faqs}}" as="f" hint-placeholder-count="5">
+<details style="border-top: 1px solid #3A3128; padding: 20px 0">
+<summary style="font-size: 17px; font-weight: 700; color: #F6EEE2; display: flex; justify-content: space-between; gap: 16px">{{f.q}}<span style="color: {{gold}}; font-size: 22px; line-height: 1" aria-hidden="true">+</span></summary>
+<p style="margin: 12px 0 0; font-size: 15px; line-height: 1.65; color: #B5A892">{{f.a}}</p>
+</details>
+</sc-for>
+</div>
+</div>
+</section>
+
+</sc-if>
+
+<footer id="contacto" style="background: #0C0A08">
+<div style="max-width: 1280px; margin: 0 auto; padding: 56px 24px 36px; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; letter-spacing: 2px; color: #F6EEE2">CLUB BAROLO SELECTO</span>
+<span style="font-size: 14px; color: #9C907C">Av. Perón, Yerba Buena, Tucumán</span>
+</div>
+<div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 10px">
+<a href="Main.dc.html" style="font-size: 15px; color: #EDE3D4; text-decoration: none">Suscripción de vinos</a>
+<a href="Tienda.dc.html" style="font-size: 15px; color: #EDE3D4; text-decoration: none">Tienda</a>
+<a href="#planes" style="font-size: 15px; color: #EDE3D4; text-decoration: none">Club de Habanos</a>
+</div>
+</div>
+<div style="border: 1px solid #F6F0E8; border-radius: 12px; padding: 16px 20px; text-align: center; font-size: 15px; font-weight: 800; letter-spacing: 1px; color: #F6F0E8">FUMAR ES PERJUDICIAL PARA LA SALUD</div>
+<span style="font-size: 12px; color: #8F8472">Venta exclusiva a mayores de 18 años. Entrega en mano con verificación de DNI. Prohibida su venta a menores de 18 años.</span>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"gold":{"editor":"color","default":"#C9A24A","options":["#C9A24A","#E8792B","#B08D57"]},"brand1":{"editor":"text","default":"Marca 1"},"brand2":{"editor":"text","default":"Marca 2"},"$preview":{"width":1440,"height":7600}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { unlocked: false, cat: 'Todo', cart: 0, added: {} };
+  }
+  renderVals() {
+    var self = this;
+    var gold = this.props.gold || '#C9A24A';
+    var b1 = this.props.brand1 || 'Marca 1';
+    var b2 = this.props.brand2 || 'Marca 2';
+    var st = this.state;
+    var wraps = ['#7A4A24', '#5E3518', '#8C5A2E', '#4A2A14', '#6B4020'];
+    var bands = [gold, '#9C2F25', '#E8792B', '#F0D9A8'];
+    function cigars(n, seed) {
+      var out = [];
+      for (var i = 0; i < n; i++) {
+        out.push({ wrap: wraps[(i + seed) % wraps.length], band: bands[(i + seed) % bands.length], foot: '#3A2512' });
+      }
+      return out;
+    }
+    function btn(key) {
+      var on = !!st.added[key];
+      return {
+        btnLabel: on ? 'Agregado ✓' : 'Agregar al carrito',
+        btnBg: on ? gold : 'transparent', btnColor: on ? '#120F0C' : '#F6EEE2',
+        add: function () { var a = Object.assign({}, self.state.added); a[key] = true; self.setState({ added: a, cart: self.state.cart + 1 }); }
+      };
+    }
+    function chip(label, active, onPick) {
+      return { label: label, pressed: active ? 'true' : 'false', pick: onPick,
+        bg: active ? gold : 'transparent', color: active ? '#120F0C' : '#EDE3D4', border: active ? gold : '#4A3F33' };
+    }
+    var plans = [
+      { tag: 'PARA EMPEZAR', name: 'Iniciación', desc: 'Vitolas cortas y suaves para descubrir el mundo del habano.', qty: '3', price: '$38.000', note: 'por mes', n: 3,
+        items: ['3 vitolas de fortaleza suave', 'Guía de corte, encendido y conservación', 'Cortador de regalo en la primera caja', 'Maridaje sugerido con un vino de la casa'] },
+      { featured: true, tag: 'AFICIONADO', name: 'Aficionado', desc: 'Lo mejor de las dos marcas, con una vitola nueva cada mes.', qty: '5', price: '$59.400', old: '$66.000', off: '10% OFF', note: 'por mes durante 3 meses · luego $66.000', n: 5,
+        items: [b1 + ' y ' + b2 + ' en la misma caja', '5 vitolas de fortalezas distintas', 'Ficha de cata de cada habano', 'Una noche de habanos en Barolo por trimestre'] },
+      { tag: 'COLECCIONISTA', name: 'Reserva', desc: 'Grandes vitolas, ediciones limitadas y lanzamientos antes que nadie.', qty: '10', price: '$145.000', note: 'por mes · cupos limitados', n: 6,
+        items: ['10 habanos, incluye ediciones limitadas', 'Humidor de viaje en la primera caja', 'Noche de habanos mensual sin cargo', 'Prioridad en lanzamientos de ' + b1 + ' y ' + b2] }
+    ].map(function (p, i) {
+      return Object.assign({}, p, {
+        cigars: cigars(Math.min(p.n, 6), i + 1), hasOld: !!p.old, hasOff: !!p.off,
+        bg: p.featured ? '#221A12' : '#1C1712', border: p.featured ? ('1.5px solid ' + gold) : '1px solid #3A3128',
+        btnBg: p.featured ? gold : 'transparent', btnColor: p.featured ? '#120F0C' : '#F6EEE2'
+      });
+    });
+    var packs = [
+      { tag: 'PACK DEL MES', name: 'Degustación ' + b1 + ' x5', detail: 'Cinco vitolas de la casa para recorrer toda la línea.', price: '$62.000', member: '$49.600', n: 5, bg: '#5A3A1E' },
+      { tag: 'MARIDAJE', name: 'Habano + whisky', detail: '2 habanos ' + b2 + ' + Highland Park 12 años.', price: '$318.000', member: '$254.400', n: 2, extra: 'WHISKY 12 AÑOS', bg: '#3A2512' },
+      { tag: 'MARIDAJE', name: 'Habano + Malbec de guarda', detail: '2 habanos + un tinto de guarda elegido por la casa.', price: '$74.000', member: '$59.200', n: 2, extra: 'TINTO DE GUARDA', bg: '#4A1E1A' },
+      { tag: 'PARA EMPEZAR', name: 'Kit de iniciación', detail: '3 habanos suaves + cortador + encendedor de llama suave.', price: '$58.000', member: '$46.400', n: 3, extra: 'CORTADOR Y ENCENDEDOR', bg: '#5A3A1E' },
+      { tag: 'OFERTA', name: 'Caja x10 ' + b2 + ' · llevá 10, pagá 9', detail: 'Caja cerrada de una vitola clásica de la marca.', price: '$120.000', member: '$96.000', n: 6, bg: '#3A2512' },
+      { tag: 'REGALO', name: 'Estuche de fiestas', detail: '4 habanos de las dos marcas en estuche con tarjeta personalizada.', price: '$68.000', member: '$54.400', n: 4, bg: '#6B4A22' }
+    ].map(function (p, i) {
+      return Object.assign({}, p, btn('pk' + i), { cigars: cigars(Math.min(p.n, 6), i + 2), hasTag: !!p.tag, hasExtra: !!p.extra });
+    });
+    var allProducts = [
+      { cat: 'Habanos', kind: b1.toUpperCase() + ' · UNIDAD', name: b1 + ' · Robusto', price: '$14.000', member: '$11.200', n: 1 },
+      { cat: 'Habanos', kind: b1.toUpperCase() + ' · UNIDAD', name: b1 + ' · Corona', price: '$12.000', member: '$9.600', n: 1 },
+      { cat: 'Habanos', kind: b2.toUpperCase() + ' · UNIDAD', name: b2 + ' · Petit Robusto', price: '$11.500', member: '$9.200', n: 1 },
+      { cat: 'Habanos', kind: b2.toUpperCase() + ' · UNIDAD', name: b2 + ' · Churchill', price: '$18.000', member: '$14.400', n: 1 },
+      { cat: 'Cajas', kind: b1.toUpperCase() + ' · CAJA', name: b1 + ' · Caja x10 Robusto', price: '$130.000', member: '$104.000', n: 5 },
+      { cat: 'Cajas', kind: b2.toUpperCase() + ' · CAJA', name: b2 + ' · Caja x25 Corona', price: '$270.000', member: '$216.000', n: 6 },
+      { cat: 'Accesorios', kind: 'ACCESORIO', name: 'Cortador doble hoja', price: '$22.000', member: '$17.600', acc: 'Co' },
+      { cat: 'Accesorios', kind: 'ACCESORIO', name: 'Encendedor jet triple llama', price: '$35.000', member: '$28.000', acc: 'En' },
+      { cat: 'Accesorios', kind: 'ACCESORIO', name: 'Humidor de escritorio para 25 habanos', price: '$160.000', member: '$128.000', acc: 'Hu' },
+      { cat: 'Accesorios', kind: 'ACCESORIO', name: 'Estuche de viaje de cuero x3', price: '$45.000', member: '$36.000', acc: 'Es' },
+      { cat: 'Accesorios', kind: 'ACCESORIO', name: 'Cenicero de cerámica Barolo', price: '$28.000', member: '$22.400', acc: 'Ce' },
+      { cat: 'Accesorios', kind: 'ACCESORIO', name: 'Humidificador para humidor', price: '$15.000', member: '$12.000', acc: 'Hm' }
+    ];
+    var catNames = ['Todo', 'Habanos', 'Cajas', 'Accesorios'];
+    var cats = catNames.map(function (c) { return chip(c, st.cat === c, function () { self.setState({ cat: c }); }); });
+    var products = allProducts.filter(function (p) { return st.cat === 'Todo' || p.cat === st.cat; }).map(function (p, i) {
+      return Object.assign({}, p, btn('pr' + p.name), { isCigar: !p.acc, isAcc: !!p.acc, ini: p.acc || '', cigars: p.acc ? [] : cigars(Math.min(p.n, 5), i) });
+    });
+    return {
+      gold: gold, brand1: b1, brand2: b2,
+      locked: !st.unlocked, open: st.unlocked,
+      enter: function () { self.setState({ unlocked: true }); },
+      heroCigars: cigars(6, 0),
+      plans: plans, packs: packs, cats: cats, products: products, cart: st.cart,
+      brands: [
+        { name: b1, tone: '#4A2A14', style: 'ESTILO · A COMPLETAR', desc: 'Describí acá el estilo de la marca: origen, fortaleza típica, notas de cata y por qué la elegimos en Barolo.', vitolas: ['Robusto', 'Corona', 'Petit Corona', 'Edición limitada'] },
+        { name: b2, tone: '#5E3518', style: 'ESTILO · A COMPLETAR', desc: 'Describí acá el estilo de la marca: origen, fortaleza típica, notas de cata y por qué la elegimos en Barolo.', vitolas: ['Petit Robusto', 'Churchill', 'Corona', 'Torpedo'] }
+      ],
+      events: [
+        { day: '14', mon: 'NOV', title: 'Noche de habanos y whisky', text: 'Dos vitolas guiadas + whisky de malta.' },
+        { day: '12', mon: 'DIC', title: 'Habanos y tintos de guarda', text: 'Maridaje con Malbec y Cabernet Franc.' },
+        { day: '16', mon: 'ENE', title: 'Lanzamiento de verano', text: 'Presentación de la nueva vitola del mes.' }
+      ],
+      faqs: [
+        { q: '¿Quién puede suscribirse?', a: 'Solo mayores de 18 años registrados como socios. Pedimos fecha de nacimiento al asociarte y DNI en cada entrega.' },
+        { q: '¿Cómo se entregan los habanos?', a: 'Se retiran en Barolo o se entregan en mano en Tucumán, siempre a un mayor de edad con DNI.' },
+        { q: '¿Cómo conservo mis habanos?', a: 'Lo ideal es un humidor a unos 70% de humedad. Cada caja trae una guía de conservación.' },
+        { q: '¿Puedo combinarlo con la suscripción de vinos?', a: 'Sí, y si tenés las dos, obtenés un 10% extra en ambas.' },
+        { q: '¿Puedo pausar o darme de baja?', a: 'Sí, podés pausar de 1 a 3 meses o darte de baja online cuando quieras.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="logo-barolo.png">
+<title>Regalería Barolo — Regalos y suscripciones de regalo</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#121110;}
+a{color:#E8792B}a:hover{color:#F59A55}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px}
+.nav-links{display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+input,textarea{font-family:inherit}
+input:focus,textarea:focus{outline:2px solid #E8792B;outline-offset:1px}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+@media (max-width:860px){.nav-links{display:none}.hero-title{font-size:44px !important}.sec-title{font-size:34px !important}}
+</style>
+</helmet>
+<div style="font-family: 'Manrope', system-ui, sans-serif; color: #EDE6DC; background: #121110; min-height: 100vh; width: 100%">
+
+<div style="background: {{accent}}; color: #121110; text-align: center; font-size: 13px; font-weight: 700; padding: 10px 16px">Fiestas 2026: regalá meses de Club Barolo Selecto con hasta 15% OFF · Tarjeta física o digital</div>
+
+<header style="border-bottom: 1px solid #2A2724; background: #121110">
+<div style="max-width: 1280px; margin: 0 auto; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
+<a href="Main.dc.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #EDE6DC">
+<img src="logo-barolo.png" alt="Logo de Barolo" width="46" height="46" style="width: 46px; height: 46px; border-radius: 50%; display: block">
+<span style="display: flex; flex-direction: column; line-height: 1.1"><span style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; letter-spacing: 2px">BAROLO</span><span style="font-size: 11px; letter-spacing: 3px; color: #B3AA9E">REGALERÍA</span></span>
+</a>
+<nav class="nav-links" aria-label="Secciones">
+<a href="Main.dc.html" style="color: #EDE6DC; text-decoration: none; font-size: 14px; font-weight: 500">Suscripciones</a>
+<a href="Tienda.dc.html" style="color: #EDE6DC; text-decoration: none; font-size: 14px; font-weight: 500">Tienda</a>
+<a href="#regalo" style="color: {{accent}}; text-decoration: none; font-size: 14px; font-weight: 800; border: 1px solid {{accent}}; padding: 6px 14px; border-radius: 999px">Regalería</a>
+<a href="Habanos.dc.html" style="color: #C9A24A; text-decoration: none; font-size: 14px; font-weight: 700">Habanos</a>
+<a href="#empresas" style="color: #EDE6DC; text-decoration: none; font-size: 14px; font-weight: 500">Empresas</a>
+</nav>
+<span style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid #4A443E; font-size: 14px; font-weight: 700" aria-live="polite">Carrito <span style="background: {{accent}}; color: #121110; border-radius: 999px; padding: 2px 9px; font-size: 12px; font-weight: 800">{{cart}}</span></span>
+</div>
+</header>
+
+<section style="border-bottom: 1px solid #2A2724; background: radial-gradient(ellipse at 80% 30%, #3A2210 0%, #121110 62%)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<span style="align-self: flex-start; border: 1px solid #4A3526; color: {{accent}}; font-size: 12px; letter-spacing: 2.5px; font-weight: 800; padding: 8px 14px; border-radius: 999px">REGALERÍA BAROLO</span>
+<h1 class="hero-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 70px; line-height: 1.02; color: #F6F0E8">El regalo que<br><span style="font-style: italic; color: {{accent}}">se descorcha</span> todos los meses.</h1>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #C9C0B4; max-width: 560px">Regalá meses de Club Barolo Selecto con una tarjeta a nombre de quien lo recibe, o elegí copas, decantadores y cajas armadas por la casa.</p>
+<div style="display: flex; gap: 14px; flex-wrap: wrap">
+<a href="#regalo" style="background: {{accent}}; color: #121110; text-decoration: none; font-weight: 800; font-size: 16px; padding: 16px 28px; border-radius: 999px; min-height: 44px; box-sizing: border-box">Armar una suscripción de regalo</a>
+<a href="#productos" style="border: 1px solid #5A534C; color: #EDE6DC; text-decoration: none; font-weight: 700; font-size: 16px; padding: 16px 28px; border-radius: 999px; min-height: 44px; box-sizing: border-box">Ver regalos</a>
+</div>
+</div>
+<div style="flex: 1 1 380px; min-width: 0; display: flex; justify-content: center; position: relative; min-height: 300px">
+<div style="position: absolute; top: 20px; left: 8%; width: 300px; max-width: 80%; aspect-ratio: 1.6; border-radius: 18px; background: linear-gradient(135deg, #C9A24A, #8C6A24); transform: rotate(-8deg); box-shadow: 0 20px 40px rgba(0,0,0,0.45)"></div>
+<div style="position: relative; margin-top: 60px; width: 340px; max-width: 92%; aspect-ratio: 1.6; border-radius: 18px; background: linear-gradient(135deg, #1F1A16, #121110); border: 1.5px solid {{accent}}; box-shadow: 0 24px 48px rgba(0,0,0,0.55); padding: 24px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; transform: rotate(4deg)">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="font-size: 11px; letter-spacing: 3px; color: #B3AA9E; font-weight: 800">TARJETA DE REGALO</span><span style="font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 700; color: {{accent}}; line-height: 1">BA</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; color: #F6F0E8">6 meses · Plan Taberna</span><span style="font-size: 12px; letter-spacing: 2px; color: #C9C0B4">CLUB BAROLO SELECTO</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="regalo" style="border-bottom: 1px solid #2A2724; background: #161412">
+<div style="max-width: 1280px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{accent}}; font-weight: 800">TARJETAS DE SUSCRIPCIÓN DE REGALO</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6F0E8">Armá tu regalo en 4 pasos.</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #B3AA9E">Se paga una sola vez, sin débito automático. Quien lo recibe activa su tarjeta y empieza a recibir su caja el mes siguiente.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 36px; align-items: flex-start">
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 30px">
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 15px; font-weight: 800; color: #F6F0E8">1. Elegí el plan</span>
+<div role="group" aria-label="Plan" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px">
+<sc-for list="{{planOpts}}" as="o" hint-placeholder-count="7">
+<button type="button" onClick="{{o.pick}}" aria-pressed="{{o.pressed}}" style="font-family: inherit; cursor: pointer; text-align: left; min-height: 64px; padding: 12px 14px; border-radius: 14px; background: {{o.bg}}; border: 1.5px solid {{o.border}}; color: #EDE6DC; display: flex; flex-direction: column; gap: 3px">
+<span style="font-size: 15px; font-weight: 800">{{o.name}}</span>
+<span style="font-size: 12px; color: #B3AA9E">{{o.sub}}</span>
+</button>
+</sc-for>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 15px; font-weight: 800; color: #F6F0E8">2. Elegí cuántos meses</span>
+<div role="group" aria-label="Duración" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px">
+<sc-for list="{{monthOpts}}" as="o" hint-placeholder-count="4">
+<button type="button" onClick="{{o.pick}}" aria-pressed="{{o.pressed}}" style="font-family: inherit; cursor: pointer; min-height: 64px; padding: 10px; border-radius: 14px; background: {{o.bg}}; border: 1.5px solid {{o.border}}; color: #EDE6DC; display: flex; flex-direction: column; gap: 3px; align-items: center">
+<span style="font-size: 16px; font-weight: 800">{{o.label}}</span>
+<span style="font-size: 12px; color: {{o.offColor}}; font-weight: 700">{{o.off}}</span>
+</button>
+</sc-for>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 15px; font-weight: 800; color: #F6F0E8">3. Diseño de la tarjeta</span>
+<div role="group" aria-label="Diseño" style="display: flex; gap: 12px; flex-wrap: wrap">
+<sc-for list="{{designOpts}}" as="o" hint-placeholder-count="3">
+<button type="button" onClick="{{o.pick}}" aria-pressed="{{o.pressed}}" style="font-family: inherit; cursor: pointer; min-height: 48px; padding: 8px 16px 8px 8px; border-radius: 999px; background: transparent; border: 1.5px solid {{o.border}}; color: #EDE6DC; display: flex; gap: 10px; align-items: center; font-size: 14px; font-weight: 700">
+<span style="width: 32px; height: 32px; border-radius: 50%; background: {{o.swatch}}; border: 1px solid #5A534C"></span>{{o.name}}
+</button>
+</sc-for>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 15px; font-weight: 800; color: #F6F0E8">4. Personalizala</span>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 700; color: #C9C0B4">Para<input type="text" value="{{to}}" onChange="{{setTo}}" maxlength="30" style="min-height: 46px; padding: 0 14px; border-radius: 12px; border: 1px solid #3A3530; background: #121110; color: #F6F0E8; font-size: 15px"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 700; color: #C9C0B4">De parte de<input type="text" value="{{from}}" onChange="{{setFrom}}" maxlength="30" style="min-height: 46px; padding: 0 14px; border-radius: 12px; border: 1px solid #3A3530; background: #121110; color: #F6F0E8; font-size: 15px"></label>
+</div>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 700; color: #C9C0B4">Mensaje<textarea onChange="{{setMsg}}" value="{{msg}}" maxlength="120" rows="3" style="padding: 12px 14px; border-radius: 12px; border: 1px solid #3A3530; background: #121110; color: #F6F0E8; font-size: 15px; resize: vertical"></textarea></label>
+<div role="group" aria-label="Forma de entrega" style="display: flex; gap: 10px; flex-wrap: wrap">
+<sc-for list="{{deliveryOpts}}" as="o" hint-placeholder-count="2">
+<button type="button" onClick="{{o.pick}}" aria-pressed="{{o.pressed}}" style="font-family: inherit; cursor: pointer; flex: 1 1 220px; text-align: left; min-height: 56px; padding: 12px 14px; border-radius: 14px; background: {{o.bg}}; border: 1.5px solid {{o.border}}; color: #EDE6DC; display: flex; flex-direction: column; gap: 3px">
+<span style="font-size: 14px; font-weight: 800">{{o.name}}</span><span style="font-size: 12px; color: #B3AA9E">{{o.sub}}</span>
+</button>
+</sc-for>
+</div>
+</div>
+</div>
+
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 18px; position: sticky; top: 16px">
+<div style="width: 100%; aspect-ratio: 1.6; border-radius: 20px; background: {{card.bg}}; border: 1.5px solid {{card.border}}; box-shadow: 0 24px 48px rgba(0,0,0,0.5); padding: 24px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="font-size: 11px; letter-spacing: 3px; color: {{card.muted}}; font-weight: 800">TARJETA DE REGALO</span><span style="font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 700; color: {{card.mark}}; line-height: 1">BA</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 13px; color: {{card.muted}}">Para <strong style="color: {{card.ink}}">{{toShow}}</strong></span>
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; color: {{card.ink}}; line-height: 1.1">{{summaryTitle}}</span>
+<span style="font-size: 12px; letter-spacing: 2px; color: {{card.muted}}">CLUB BAROLO SELECTO</span>
+</div>
+</div>
+<div style="background: #F3ECE2; color: #2A2420; border-radius: 14px; padding: 18px 20px; font-family: 'Cormorant Garamond', serif; font-size: 20px; font-style: italic; line-height: 1.35">“{{msgShow}}”<span style="display: block; margin-top: 8px; font-family: 'Manrope', sans-serif; font-style: normal; font-size: 13px; font-weight: 700; color: #6B5F55">— {{fromShow}}</span></div>
+<div style="background: #1A1816; border: 1px solid #2A2724; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 10px">
+<span style="display: flex; justify-content: space-between; font-size: 14px; color: #B3AA9E"><span>{{planName}} · {{monthsLabel}}</span><span>{{subtotal}}</span></span>
+<sc-if value="{{hasDiscount}}" hint-placeholder-val="{{ true }}"><span style="display: flex; justify-content: space-between; font-size: 14px; color: {{accent}}; font-weight: 700"><span>Descuento por {{monthsLabel}}</span><span>−{{discount}}</span></span></sc-if>
+<span style="display: flex; justify-content: space-between; font-size: 14px; color: #B3AA9E"><span>{{deliveryName}}</span><span>{{deliveryCost}}</span></span>
+<span style="display: flex; justify-content: space-between; align-items: baseline; border-top: 1px solid #2E2A26; padding-top: 12px"><span style="font-size: 15px; font-weight: 800; color: #F6F0E8">Total</span><span style="font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 700; color: {{accent}}; line-height: 1">{{total}}</span></span>
+<span style="font-size: 12px; color: #9C9388">Pago único · hasta 3 cuotas sin interés</span>
+<button type="button" onClick="{{addGift}}" style="margin-top: 6px; font-family: inherit; cursor: pointer; min-height: 50px; border: none; border-radius: 999px; background: {{accent}}; color: #121110; font-size: 16px; font-weight: 800">{{giftBtn}}</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section aria-label="Gift cards de monto libre" style="border-bottom: 1px solid #2A2724">
+<div style="max-width: 1280px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 10px; max-width: 720px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{accent}}; font-weight: 800">GIFT CARD BAROLO</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 44px; line-height: 1.05; color: #F6F0E8">¿No sabés qué regalar? Que elija en Barolo.</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #B3AA9E">Un monto para usar en la taberna, en la tienda o en una suscripción. Vence a los 12 meses.</p>
+</div>
+<div class="grid4">
+<sc-for list="{{giftCards}}" as="g" hint-placeholder-count="4">
+<article style="border-radius: 18px; background: #1A1816; border: 1px solid #2A2724; overflow: hidden; display: flex; flex-direction: column">
+<div style="aspect-ratio: 1.6; background: {{g.bg}}; padding: 18px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between">
+<span style="display: flex; justify-content: space-between"><span style="font-size: 10px; letter-spacing: 2.5px; font-weight: 800; color: {{g.muted}}">GIFT CARD</span><span style="font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; color: {{g.mark}}; line-height: 1">BA</span></span>
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 700; color: {{g.ink}}">{{g.amount}}</span>
+</div>
+<div style="padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 14px; color: #B3AA9E">{{g.text}}</span>
+<button type="button" onClick="{{g.add}}" style="font-family: inherit; cursor: pointer; min-height: 44px; border-radius: 999px; font-size: 14px; font-weight: 800; background: {{g.btnBg}}; color: {{g.btnColor}}; border: 1px solid {{accent}}">{{g.btnLabel}}</button>
+</div>
+</article>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section id="productos" style="border-bottom: 1px solid #2A2724; background: #161412">
+<div style="max-width: 1280px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 700px">
+<span style="font-size: 12px; letter-spacing: 3px; color: {{accent}}; font-weight: 800">REGALOS Y ACCESORIOS</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 50px; line-height: 1.05; color: #F6F0E8">Copas, decantadores y cajas armadas.</h2>
+</div>
+<div style="display: flex; gap: 10px; flex-wrap: wrap" role="group" aria-label="Ordenar">
+<sc-for list="{{sorts}}" as="s" hint-placeholder-count="3">
+<button type="button" onClick="{{s.pick}}" aria-pressed="{{s.pressed}}" style="font-family: inherit; cursor: pointer; min-height: 40px; padding: 8px 14px; border-radius: 10px; font-size: 13px; font-weight: 700; background: {{s.bg}}; color: {{s.color}}; border: 1px solid {{s.border}}">{{s.label}}</button>
+</sc-for>
+</div>
+</div>
+<div role="group" aria-label="Filtrar" style="display: flex; gap: 10px; flex-wrap: wrap">
+<sc-for list="{{cats}}" as="ct" hint-placeholder-count="5">
+<button type="button" onClick="{{ct.pick}}" aria-pressed="{{ct.pressed}}" style="font-family: inherit; cursor: pointer; min-height: 44px; padding: 10px 18px; border-radius: 999px; font-size: 14px; font-weight: 800; background: {{ct.bg}}; color: {{ct.color}}; border: 1px solid {{ct.border}}">{{ct.label}}</button>
+</sc-for>
+</div>
+<div class="grid4">
+<sc-for list="{{products}}" as="p" hint-placeholder-count="8">
+<article style="background: #1A1816; border: 1px solid #2A2724; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div style="height: 200px; background: #E9E1D6; display: flex; align-items: flex-end; justify-content: center; gap: 6px; padding-bottom: 18px; box-sizing: border-box; position: relative">
+<sc-if value="{{p.hasTag}}" hint-placeholder-val="{{ false }}"><span style="position: absolute; top: 12px; left: 12px; font-size: 11px; font-weight: 800; color: #121110; background: {{accent}}; padding: 4px 8px; border-radius: 6px">{{p.tag}}</span></sc-if>
+<sc-if value="{{p.isGlass}}" hint-placeholder-val="{{ false }}">
+<sc-for list="{{p.glasses}}" as="g" hint-placeholder-count="2">
+<svg width="{{g.w}}" height="{{g.h}}" viewBox="0 0 60 150" aria-hidden="true"><path d="{{g.bowl}}" fill="#FFFFFF" fill-opacity="0.55" stroke="#6B5F55" stroke-width="2"/><path d="{{g.wine}}" fill="{{g.color}}"/><path d="M30 {{g.stemTop}} V136" stroke="#6B5F55" stroke-width="2.5"/><path d="M14 138 H46" stroke="#6B5F55" stroke-width="3" stroke-linecap="round"/></svg>
+</sc-for>
+</sc-if>
+<sc-if value="{{p.isDecanter}}" hint-placeholder-val="{{ false }}">
+<svg width="150" height="150" viewBox="0 0 150 150" aria-hidden="true"><path d="M66 8h18v40c0 10 40 30 40 62 0 22-20 32-49 32S26 132 26 110c0-32 40-52 40-62z" fill="#FFFFFF" fill-opacity="0.55" stroke="#6B5F55" stroke-width="2.5"/><path d="M32 108c0-6 10-14 43-14s43 8 43 14c0 18-16 28-43 28s-43-10-43-28z" fill="#5A1E1A"/></svg>
+</sc-if>
+<sc-if value="{{p.isGrinder}}" hint-placeholder-val="{{ false }}">
+<svg width="120" height="160" viewBox="0 0 120 160" aria-hidden="true"><rect x="30" y="60" width="60" height="86" rx="6" fill="#6B4A2E"/><rect x="34" y="88" width="52" height="4" fill="#4A3220"/><path d="M40 60l6-22h28l6 22z" fill="#9C9388"/><circle cx="60" cy="34" r="6" fill="#4A443E"/><path d="M60 34h38" stroke="#4A443E" stroke-width="5" stroke-linecap="round"/><circle cx="100" cy="34" r="8" fill="#6B4A2E"/></svg>
+</sc-if>
+<sc-if value="{{p.isBox}}" hint-placeholder-val="{{ false }}">
+<svg width="170" height="150" viewBox="0 0 170 150" aria-hidden="true"><rect x="12" y="50" width="146" height="94" rx="6" fill="{{p.boxColor}}"/><rect x="12" y="36" width="146" height="22" rx="4" fill="{{p.lidColor}}"/><rect x="78" y="36" width="14" height="108" fill="{{accent}}"/><path d="M85 36c-14-26-40-22-30-6 6 8 22 6 30 6zM85 36c14-26 40-22 30-6-6 8-22 6-30 6z" fill="{{accent}}"/><text x="45" y="110" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="22" font-weight="700" fill="#F6F0E8">BA</text></svg>
+</sc-if>
+</div>
+<div style="padding: 18px 18px 20px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+<span style="font-size: 11px; letter-spacing: 1.5px; color: #B3AA9E; font-weight: 800">{{p.kind}}</span>
+<h3 style="margin: 0; font-size: 15px; font-weight: 800; line-height: 1.4; color: #F6F0E8; flex-grow: 1">{{p.name}}</h3>
+<span style="font-size: 14px; color: #9C9388; text-decoration: line-through">{{p.priceTxt}}</span>
+<span style="display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 700; color: {{accent}}; line-height: 1">{{p.memberTxt}}</span><span style="font-size: 12px; color: #B3AA9E">socios</span></span>
+<label style="display: flex; gap: 8px; align-items: center; font-size: 13px; color: #C9C0B4; min-height: 32px"><input type="checkbox" style="width: 18px; height: 18px; accent-color: #E8792B">Envolver para regalo</label>
+<button type="button" onClick="{{p.add}}" style="font-family: inherit; cursor: pointer; min-height: 44px; border-radius: 999px; font-size: 14px; font-weight: 800; background: {{p.btnBg}}; color: {{p.btnColor}}; border: 1px solid {{accent}}">{{p.btnLabel}}</button>
+</div>
+</article>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section id="empresas" style="border-bottom: 1px solid #2A2724; background: {{accent}}">
+<div style="max-width: 1280px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+<div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 12px; letter-spacing: 3px; color: #2A1A10; font-weight: 800">REGALOS EMPRESARIALES</span>
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 46px; line-height: 1.05; color: #121110">Cajas de fin de año para tu equipo y tus clientes.</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #2A1A10">Tarjeta con el logo de tu empresa, mensaje personalizado y entrega coordinada en Tucumán. Factura A o B.</p>
+</div>
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<sc-for list="{{tiers}}" as="t" hint-placeholder-count="3">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; background: #121110; color: #F6F0E8; border-radius: 14px; padding: 16px 18px"><span style="font-size: 15px; font-weight: 800">{{t.qty}}</span><span style="font-size: 14px; color: #E8792B; font-weight: 800">{{t.off}}</span></div>
+</sc-for>
+<a href="#empresas" style="margin-top: 6px; text-align: center; background: #121110; color: #F6F0E8; text-decoration: none; font-weight: 800; font-size: 15px; padding: 15px 24px; border-radius: 999px; min-height: 44px; box-sizing: border-box">Pedir presupuesto por WhatsApp</a>
+</div>
+</div>
+</section>
+
+<section aria-label="Preguntas sobre regalos" style="border-bottom: 1px solid #2A2724">
+<div style="max-width: 860px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 28px">
+<h2 class="sec-title" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 46px; line-height: 1.05; color: #F6F0E8">Preguntas sobre regalos</h2>
+<div style="display: flex; flex-direction: column">
+<sc-for list="{{faqs}}" as="f" hint-placeholder-count="5">
+<details style="border-top: 1px solid #2E2A26; padding: 20px 0">
+<summary style="font-size: 17px; font-weight: 700; color: #F6F0E8; display: flex; justify-content: space-between; gap: 16px">{{f.q}}<span style="color: {{accent}}; font-size: 22px; line-height: 1" aria-hidden="true">+</span></summary>
+<p style="margin: 12px 0 0; font-size: 15px; line-height: 1.65; color: #B3AA9E">{{f.a}}</p>
+</details>
+</sc-for>
+</div>
+</div>
+</section>
+
+<footer style="background: #0D0C0B">
+<div style="max-width: 1280px; margin: 0 auto; padding: 56px 24px 36px; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; letter-spacing: 2px; color: #F6F0E8">CLUB BAROLO SELECTO</span><span style="font-size: 14px; color: #9C9388">Av. Perón, Yerba Buena, Tucumán</span></div>
+<div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 10px">
+<a href="Main.dc.html" style="font-size: 15px; color: #EDE6DC; text-decoration: none">Suscripciones</a>
+<a href="Tienda.dc.html" style="font-size: 15px; color: #EDE6DC; text-decoration: none">Tienda</a>
+<a href="#regalo" style="font-size: 15px; color: #EDE6DC; text-decoration: none">Regalería</a>
+<a href="Habanos.dc.html" style="font-size: 15px; color: #EDE6DC; text-decoration: none">Habanos</a>
+</div>
+</div>
+<div style="border-top: 1px solid #24211E; padding-top: 20px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between">
+<span style="font-size: 12px; color: #8E867C">BEBER CON MODERACIÓN. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS. Precios de referencia para la presentación.</span>
+<span style="font-size: 12px; color: #8E867C">© 2026 Barolo · Taberna Selecta</span>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#E8792B","options":["#E8792B","#C9A24A","#B5473A"]},"$preview":{"width":1440,"height":6200}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { plan: 'taberna', months: 6, design: 'negra', delivery: 'fisica', to: 'Marcela', from: 'Juan', msg: 'Para que cada mes tengas una excusa para brindar. ¡Felices fiestas!', cat: 'Todo', sort: 'dest', added: {}, cart: 0, giftAdded: false };
+  }
+  renderVals() {
+    var self = this;
+    var st = this.state;
+    var accent = this.props.accent || '#E8792B';
+    function money(n) { var s = String(Math.round(n)); var out = ''; while (s.length > 3) { out = '.' + s.slice(-3) + out; s = s.slice(0, -3); } return '$' + s + out; }
+    function sel(active) { return { bg: active ? '#2B1A10' : '#1A1816', border: active ? accent : '#3A3530', pressed: active ? 'true' : 'false' }; }
+    function chip(label, active, onPick) { return { label: label, pressed: active ? 'true' : 'false', pick: onPick, bg: active ? accent : 'transparent', color: active ? '#121110' : '#EDE6DC', border: active ? accent : '#4A443E' }; }
+    function btn(key) {
+      var on = !!st.added[key];
+      return { btnLabel: on ? 'Agregado ✓' : 'Agregar al carrito', btnBg: on ? accent : 'transparent', btnColor: on ? '#121110' : '#F6F0E8',
+        add: function () { var a = Object.assign({}, self.state.added); a[key] = true; self.setState({ added: a, cart: self.state.cart + 1 }); } };
+    }
+    var plans = [{"id": "descubrir", "name": "Descubrir", "sub": "2 Malbec · $21.500/mes", "price": 21500}, {"id": "taberna", "name": "Taberna", "sub": "3 botellas · $45.200/mes", "price": 45200}, {"id": "norte", "name": "Norte de Altura", "sub": "3 del Norte · $42.900/mes", "price": 42900}, {"id": "reserva", "name": "Reserva", "sub": "2 alta gama · $72.000/mes", "price": 72000}, {"id": "blanca", "name": "Blanca", "sub": "2 blancos · $48.400/mes", "price": 48400}, {"id": "cava", "name": "Cava Privada", "sub": "3 íconos · $187.200/mes", "price": 187200}, {"id": "habanos", "name": "Habanos Aficionado", "sub": "5 habanos · $66.000/mes", "price": 66000}];
+    var months = [{ m: 1, label: '1 mes', off: 0 }, { m: 3, label: '3 meses', off: 0.05 }, { m: 6, label: '6 meses', off: 0.10 }, { m: 12, label: '12 meses', off: 0.15 }];
+    var designs = [
+      { id: 'negra', name: 'Clásica negra', swatch: '#121110', card: { bg: 'linear-gradient(135deg, #1F1A16, #121110)', border: accent, ink: '#F6F0E8', muted: '#B3AA9E', mark: accent } },
+      { id: 'naranja', name: 'Naranja Barolo', swatch: '#E8792B', card: { bg: 'linear-gradient(135deg, #F08A3C, #C95F18)', border: '#F59A55', ink: '#121110', muted: '#3A1E0A', mark: '#121110' } },
+      { id: 'dorada', name: 'Dorada', swatch: '#C9A24A', card: { bg: 'linear-gradient(135deg, #D8B562, #8C6A24)', border: '#E2BE6A', ink: '#1A140A', muted: '#3A2C10', mark: '#1A140A' } }
+    ];
+    var deliveries = [
+      { id: 'fisica', name: 'Tarjeta física en estuche', sub: 'Retiro en Barolo o entrega en Tucumán', cost: 0 },
+      { id: 'digital', name: 'Tarjeta digital', sub: 'Por WhatsApp o mail, en el día que elijas', cost: 0 }
+    ];
+    var plan = plans.filter(function (p) { return p.id === st.plan; })[0];
+    var mo = months.filter(function (m) { return m.m === st.months; })[0];
+    var design = designs.filter(function (d) { return d.id === st.design; })[0];
+    var deliv = deliveries.filter(function (d) { return d.id === st.delivery; })[0];
+    var sub = plan.price * mo.m;
+    var disc = Math.round(sub * mo.off);
+    var allProducts = [
+      { cat: 'Copas', kind: 'COPAS · SET X2', name: 'Copa Low Cabernet 540 ml con logo Barolo · set x2', price: 39000, member: 33100, glass: 'low', n: 2, tag: 'CON LOGO BAROLO', dest: 1 },
+      { cat: 'Decanter', kind: 'DECANTER', name: 'Decantador 1500 ml Deli', price: 30157, member: 25600, decanter: true, dest: 2 },
+      { cat: 'Copas', kind: 'COPAS · SET X6', name: 'Copas Cabernet 550 ml Skyline · set x6', price: 143053, member: 121500, glass: 'cab', n: 3, dest: 3 },
+      { cat: 'Copas', kind: 'COPAS · SET X6', name: 'Copa Borgoña 630 ml Mergus · set x6', price: 143053, member: 121500, glass: 'burg', n: 3, dest: 4 },
+      { cat: 'Copas', kind: 'COPAS', name: 'Copa Champagne Skyline', price: 112700, member: 95700, glass: 'flute', n: 2, dest: 5 },
+      { cat: 'Café', kind: 'CAFÉ', name: 'Molinillo manual para café', price: 90000, member: 76500, grinder: true, dest: 6 },
+      { cat: 'Estuches y magnums', kind: "ESTUCHE · TINTO", name: "Las Perdices Don Juan", price: 32800, member: 27800, box: ["#3A1A16", "#24140F"], tag: 'MÁS REGALADO', dest: 0 },
+      { cat: 'Estuches y magnums', kind: "ESTUCHE REGALO · TINTO", name: "Las Perdices Tinamú + Copa", price: 65600, member: 55700, box: ["#2C2E16", "#1F2010"], dest: 11 },
+      { cat: 'Estuches y magnums', kind: "ESTUCHE REGALO · TINTO", name: "Estuche Santa Julia + Vasos", price: 26900, member: 22800, box: ["#4A2A12", "#33200E"], dest: 12 },
+      { cat: 'Estuches y magnums', kind: "ESTUCHE X3 · TINTO", name: "Colección Quinquela Mix", price: 65600, member: 55700, box: ["#33201A", "#24140F"], dest: 13 },
+      { cat: 'Estuches y magnums', kind: "ESTUCHE X3 · TINTO", name: "El Arbolar Blend", price: 66600, member: 56600, box: ["#3A1A16", "#24140F"], dest: 14 },
+      { cat: 'Estuches y magnums', kind: "ESTUCHE X3 · TINTO", name: "La Puerta Gran Reserva", price: 102500, member: 87100, box: ["#2C2E16", "#1F2010"], dest: 15 },
+      { cat: 'Estuches y magnums', kind: "MAGNUM 1,5 L · TINTO", name: "Hermandad Blend", price: 57000, member: 48400, box: ["#4A2A12", "#33200E"], dest: 16 },
+      { cat: 'Estuches y magnums', kind: "MAGNUM 1,5 L · TINTO", name: "Las Perdices Reserva", price: 41800, member: 35500, box: ["#33201A", "#24140F"], dest: 17 },
+      { cat: 'Estuches y magnums', kind: "MAGNUM 1,5 L · TINTO", name: "2456 Malbec Gran Reserva", price: 70900, member: 60200, box: ["#3A1A16", "#24140F"], dest: 18 },
+      { cat: 'Estuches y magnums', kind: "MAGNUM 1,5 L · TINTO", name: "Rupestre Blend", price: 93600, member: 79500, box: ["#2C2E16", "#1F2010"], dest: 19 },
+      { cat: 'Estuches y magnums', kind: "ESTUCHE X3 · TINTO", name: "Familia Isasmendi Estiba Familiar Reservada", price: 209200, member: 177800, box: ["#4A2A12", "#33200E"], dest: 20 },
+      { cat: 'Estuches y magnums', kind: "ESTUCHE X3 · TINTO", name: "Palo Domingo Blend", price: 175200, member: 148900, box: ["#33201A", "#24140F"], dest: 21 }
+    ];
+    var glassShapes = {
+      low: { bowl: 'M10 10 C6 60 16 84 30 86 C44 84 54 60 50 10 Z', wine: 'M12 50 C14 74 22 82 30 83 C38 82 46 74 48 50 Z', stemTop: 86, h: 120 },
+      cab: { bowl: 'M14 6 C6 50 14 76 30 78 C46 76 54 50 46 6 Z', wine: 'M12 44 C14 66 22 74 30 75 C38 74 46 66 48 44 Z', stemTop: 78, h: 150 },
+      burg: { bowl: 'M18 6 C2 40 8 78 30 80 C52 78 58 40 42 6 Z', wine: 'M8 50 C10 70 20 77 30 78 C40 77 50 70 52 50 Z', stemTop: 80, h: 150 },
+      flute: { bowl: 'M22 4 C18 40 22 72 30 74 C38 72 42 40 38 4 Z', wine: 'M21 24 C20 50 24 70 30 71 C36 70 40 50 39 24 Z', stemTop: 74, h: 150 }
+    };
+    var cats = ['Todo', 'Estuches y magnums', 'Copas', 'Decanter', 'Café'].map(function (c) { return chip(c, st.cat === c, function () { self.setState({ cat: c }); }); });
+    var sorts = [{ id: 'dest', label: 'Destacados' }, { id: 'desc', label: 'Mayor precio' }, { id: 'asc', label: 'Menor precio' }].map(function (s) { return chip(s.label, st.sort === s.id, function () { self.setState({ sort: s.id }); }); });
+    var products = allProducts.filter(function (p) { return st.cat === 'Todo' || p.cat === st.cat; });
+    products.sort(function (a, b) { return st.sort === 'asc' ? a.member - b.member : st.sort === 'desc' ? b.member - a.member : a.dest - b.dest; });
+    products = products.map(function (p) {
+      var gs = [];
+      if (p.glass) { var g = glassShapes[p.glass]; for (var i = 0; i < p.n; i++) { gs.push({ bowl: g.bowl, wine: g.wine, stemTop: g.stemTop, h: g.h, w: Math.round(g.h * 60 / 150), color: p.glass === 'flute' ? '#E6C766' : '#6E1F1A' }); } }
+      return Object.assign({}, p, btn('p' + p.name), {
+        priceTxt: money(p.price), memberTxt: money(p.member), hasTag: !!p.tag, tag: p.tag || '',
+        isGlass: !!p.glass, glasses: gs, isDecanter: !!p.decanter, isGrinder: !!p.grinder, isBox: !!p.box,
+        boxColor: p.box ? p.box[0] : '', lidColor: p.box ? p.box[1] : ''
+      });
+    });
+    var gifts = [
+      { amount: '$30.000', text: 'Una cena para dos en la taberna.', bg: 'linear-gradient(135deg, #1F1A16, #121110)', ink: '#F6F0E8', muted: '#B3AA9E', mark: accent },
+      { amount: '$50.000', text: 'Un pack de la tienda o un mes de club.', bg: 'linear-gradient(135deg, #F08A3C, #C95F18)', ink: '#121110', muted: '#3A1E0A', mark: '#121110' },
+      { amount: '$100.000', text: 'Para el que ya tiene todo.', bg: 'linear-gradient(135deg, #D8B562, #8C6A24)', ink: '#1A140A', muted: '#3A2C10', mark: '#1A140A' },
+      { amount: 'Monto libre', text: 'Elegís el valor desde $10.000.', bg: 'linear-gradient(135deg, #3A1A16, #1F0E0B)', ink: '#F6F0E8', muted: '#C9C0B4', mark: accent }
+    ].map(function (g, i) { return Object.assign({}, g, btn('gc' + i)); });
+    return {
+      accent: accent, cart: st.cart,
+      planOpts: plans.map(function (p) { return Object.assign({ name: p.name, sub: p.sub, pick: function () { self.setState({ plan: p.id }); } }, sel(st.plan === p.id)); }),
+      monthOpts: months.map(function (m) { var on = st.months === m.m; return Object.assign({ label: m.label, off: m.off ? ('-' + Math.round(m.off * 100) + '%') : 'Pago único', offColor: m.off ? accent : '#9C9388', pick: function () { self.setState({ months: m.m }); } }, sel(on)); }),
+      designOpts: designs.map(function (d) { var on = st.design === d.id; return { name: d.name, swatch: d.swatch, border: on ? accent : '#3A3530', pressed: on ? 'true' : 'false', pick: function () { self.setState({ design: d.id }); } }; }),
+      deliveryOpts: deliveries.map(function (d) { return Object.assign({ name: d.name, sub: d.sub, pick: function () { self.setState({ delivery: d.id }); } }, sel(st.delivery === d.id)); }),
+      card: design.card,
+      to: st.to, from: st.from, msg: st.msg,
+      setTo: function (e) { self.setState({ to: e.target.value }); },
+      setFrom: function (e) { self.setState({ from: e.target.value }); },
+      setMsg: function (e) { self.setState({ msg: e.target.value }); },
+      toShow: st.to || 'nombre', fromShow: st.from || 'tu nombre', msgShow: st.msg || 'Tu mensaje acá',
+      summaryTitle: mo.label + ' · ' + plan.name,
+      planName: plan.name, monthsLabel: mo.label,
+      subtotal: money(sub), hasDiscount: disc > 0, discount: money(disc),
+      deliveryName: deliv.name, deliveryCost: deliv.cost ? money(deliv.cost) : 'Sin cargo',
+      total: money(sub - disc + deliv.cost),
+      giftBtn: st.giftAdded ? 'Regalo agregado ✓' : 'Regalar ' + mo.label + ' de ' + plan.name,
+      addGift: function () { self.setState({ giftAdded: true, cart: self.state.giftAdded ? self.state.cart : self.state.cart + 1 }); },
+      giftCards: gifts,
+      cats: cats, sorts: sorts, products: products,
+      tiers: [{ qty: 'Desde 10 cajas', off: '10% OFF' }, { qty: 'Desde 30 cajas', off: '15% OFF' }, { qty: 'Desde 50 cajas', off: '20% OFF + logo en la caja' }],
+      faqs: [
+        { q: '¿Cómo activa su regalo quien lo recibe?', a: 'Con el código de la tarjeta, en la web o en la taberna. Elige su dirección de entrega y empieza a recibir su caja el mes siguiente.' },
+        { q: '¿El regalo tiene débito automático?', a: 'No. Se paga una sola vez y termina cuando se cumplen los meses regalados. Si quiere seguir, puede asociarse con su propia tarjeta.' },
+        { q: '¿Puedo elegir cuándo llega la tarjeta?', a: 'Sí. La digital se envía el día que elijas; la física se retira en Barolo o la entregamos en Tucumán.' },
+        { q: '¿La gift card sirve en la taberna?', a: 'Sí, se puede usar en la taberna, en la tienda o para pagar una suscripción, durante 12 meses.' },
+        { q: '¿Hacen factura para empresas?', a: 'Sí, factura A o B, con descuentos por cantidad y personalización con tu logo.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
